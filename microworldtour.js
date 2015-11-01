@@ -1,4 +1,4 @@
-var map = L.map('map').setView([51.505, -0.09], 2);
+var map = L.map('map').setView([51.505, -0.09], 3);
 
 var api_key = "pk.eyJ1IjoibnRvbGwiLCJhIjoiY2lnZ3R4Z2dkMHNwN3Zpa3Jyb3dsOTd1OSJ9.ea8lBQyOqbJ-lwjeAhr2WQ";
 

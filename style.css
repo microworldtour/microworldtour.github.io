@@ -7,3 +7,19 @@ html, body, #map {
     height: 100%;
 }
 
+header {
+    font-size: 100%;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-rendering: optimizelegibility;
+    margin: 16px 0;
+    padding-left: 8px;
+}
+
+a, a:visited {
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
