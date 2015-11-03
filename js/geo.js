@@ -7,11 +7,11 @@ var MicroIcon = L.Icon.extend({
 });
 
 
-var mary_icon = new MicroIcon({iconUrl: 'mary.png'})
-var meena_icon = new MicroIcon({iconUrl: 'meena.png'})
-var mandela_icon = new MicroIcon({iconUrl: 'mandela.png'})
-var meixiu_icon = new MicroIcon({iconUrl: 'meixiu.png'})
-var mohandas_icon = new MicroIcon({iconUrl: 'mohandas.png'})
+var mary_icon = new MicroIcon({iconUrl: 'img/mary.png'})
+var meena_icon = new MicroIcon({iconUrl: 'img/meena.png'})
+var mandela_icon = new MicroIcon({iconUrl: 'img/mandela.png'})
+var meixiu_icon = new MicroIcon({iconUrl: 'img/meixiu.png'})
+var mohandas_icon = new MicroIcon({iconUrl: 'img/mohandas.png'})
 
 
 function addMarker(element, index, array) {
