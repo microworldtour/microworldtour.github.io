@@ -1,25 +1,61 @@
 body {
     padding: 0;
     margin: 0;
-}
-
-html, body, #map {
-    height: 100%;
-}
-
-header {
     font-size: 100%;
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-rendering: optimizelegibility;
-    margin: 16px 0;
-    padding-left: 8px;
+    color: #444;
+}
+
+html, body {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.full_page{
+    height: 100%;
+}
+
+.fragment {
+    height: 40%;
+}
+
+.content {
+    width: 960px;
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+header {
+    padding: 16px 8px;
+    border-bottom: 1px #999 solid;
+}
+
+.entry {
 }
 
 a, a:visited {
-    color: #444;
+    color: #222;
     text-decoration: none;
 }
 
 a:hover, a:focus {
+    color: #222;
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .content { width: 768px; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .content { width: 420px; }
+}
+
+@media only screen and (max-width: 480px) {
+    .content { width: 300px; }
 }
