@@ -13,9 +13,9 @@ L.tileLayer(tile_layer_url, {
 
 var MicroIcon = L.Icon.extend({
     options: {
-        iconSize: [48, 32],
-        iconAnchor: [24, 32],
-        popupAnchor: [0, -28]
+        iconSize: [32, 21],
+        iconAnchor: [16, 21],
+        popupAnchor: [0, -20]
     }
 });
 
