@@ -20,8 +20,9 @@ How To Contribute
 All contributions are done via pull requests to this repository. If you are
 unsure how to do this, please contact Nicholas (http://ntoll.org/contact).
 
-To be considered as a recipient you need to add yourself to the waitinglist.rst
-file in this repository (instructions are found therein) as a pull request.
+To be considered as a recipient you need to add yourself to the
+``waitinglist.rst`` file in this repository (instructions are found therein)
+as a pull request.
 
 The choice of the next recipient is completely the decision of the current
 recipient but they *must* be a person found on the waiting list (see above).
