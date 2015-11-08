@@ -8,6 +8,12 @@ The website is hosted here:
 
 http://microworldtour.github.io/
 
+We have a mailing list: microbit@python.org
+
+To post to it you need to join here:
+
+https://mail.python.org/mailman/listinfo/microbit
+
 How To Contribute
 -----------------
 
