@@ -76,6 +76,8 @@ form::
 Once again, modify the values used above to reflect your own contribution.
 
 If necessary, please feel free to contribute changes to the design via the CSS.
+If you're unsure please take a look at how it's already been done on the live
+website.
 
 It's a very simple site (on purpose), so shouldn't be too hard to navigate.
 
