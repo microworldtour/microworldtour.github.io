@@ -31,7 +31,7 @@ Feel free to encourage friends to sign up!
 To pass on the micro:bit contact the person you have chosen as the next
 recipient and ask for two things:
 
-* Confirmation that they will complete some work within a week of getting the device. If the sound unsure, choose someone else because these devices are so rare that we must get them into the hands of people who will *do something* in a timely manner.
+* Confirmation that they will complete some work within a week of getting the device. If they sound unsure, choose someone else. These devices are so rare that we must get them into the hands of people who will *do something* in a timely manner.
 * Their postal address. :-)
 
 Before you post the device you should create a pull request that changes two
