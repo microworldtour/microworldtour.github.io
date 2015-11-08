@@ -18,21 +18,23 @@ To be considered as a recipient you need to add yourself to the waitinglist.rst
 file in this repository (instructions are found therein) as a pull request.
 
 The choice of the next recipient is completely the decision of the current
-recipient but the *must* be a person found on the waiting list (see above).
+recipient but they *must* be a person found on the waiting list (see above).
+Feel free to encourage friends to sign up!
 
-To pass on the micro:bit contact the next recipient and ask for two things:
+To pass on the micro:bit contact the person you have chosen as the next
+recipient and ask for two things:
 
-* Confirmation that they will complete some work within a week of getting the device.
+* Confirmation that they will complete some work within a week of getting the device. If the sound unsure, choose someone else because these devices are so rare that we must get them into the hands of people who will _do something_ in a timely manner.
 * Their postal address. :-)
 
 Before you post the device you should create a pull request that changes two
-files: the_name_of_your_microbit.js and the_name_of_your_microbit.html
+files: ``the_name_of_your_microbit.js`` and ``the_name_of_your_microbit.html``.
 
-In the JavaScript file you need to add a new object to start of the array
+In the JavaScript file you need to add a new object to the start of the array
 found within the file. The object *must* be of the following form::
 
     {
-        popup: "A short description of what you did. Rule of thumb - tweetable.",
+        popup: "A short description of what you did. Rule of thumb: tweetable.",
         lonLat: [52.133597, -0.990607],
         options: {
             icon: name_of_microbit_icon
