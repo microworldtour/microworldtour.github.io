@@ -13,3 +13,4 @@ based on the order of this list):
 * Rich Wareham - Cambridge, UK. rich.microbit@richwareham.com. BBC initiated C/C++/Python/JavaScript developer who's eager to fiddle with micropython.
 * Peter Cunderlik - Cambridge, UK. peter.cunderlik+microbit@gmail.com. Spectrum Basic to Pascal to C++ to Python dev. Can't wait to get some LEDs flash!
 * Pav Andre. London, UK. rootsumsquared+microbit@gmail.com An aspiring standup comedian and all-round geek. @rs2.
+* Cory Benfield - London, UK cory@lukasa.co.uk. Developer of overly complex protocol stacks.
