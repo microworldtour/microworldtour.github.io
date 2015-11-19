@@ -1,11 +1,13 @@
-var mahiri_icon = new MicroIcon({iconUrl: '/img/mahiri.png'})
+var monifa_icon = new MicroIcon({iconUrl: '/img/monifa.png'})
+var monifa_colour = '#d4391b';
 
-var mahiriMicrobit = [{
-    popup: "Nicholas posted Mahiri micro:bit from here.",
+var monifaMicrobit = [{
+    popup: "Nicholas posted Monifa micro:bit from here.",
     lonLat: [52.133597, -0.990607],
     options: {
-        icon: mahiri_icon
+        icon: monifa_icon
     }
 }];
 
-mahiriMicrobit.forEach(addMarker);
+monifaMicrobit.forEach(addMarker);
+addRoute(monifaMicrobit, monifa_colour);

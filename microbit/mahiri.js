@@ -1,4 +1,5 @@
 var mahiri_icon = new MicroIcon({iconUrl: '/img/mahiri.png'})
+var mahiri_colour = '#d4391b';
 
 var mahiriMicrobit = [{
     popup: "Nicholas posted Mahiri micro:bit from here.",
@@ -15,3 +16,4 @@ var mahiriMicrobit = [{
 }];
 
 mahiriMicrobit.forEach(addMarker);
+addRoute(mahiriMicrobit, mahiri_colour);
