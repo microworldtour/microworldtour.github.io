@@ -19,8 +19,16 @@ var MicroIcon = L.Icon.extend({
     }
 });
 
+var home_icon = new MicroIcon({iconUrl: '/img/home.png'})
+
 function addMarker(element, index, array) {
-    L.marker(element.lonLat, element.options).addTo(map).bindPopup(element.popup);
+    if(index===0) {
+        L.marker(element.lonLat, {
+            icon: home_icon
+        }).addTo(map).bindPopup('Nicholas posted all the micro:bits from Towcester.');
+    } else {
+        L.marker(element.lonLat, element.options).addTo(map).bindPopup(element.popup);
+    }
 }
 
 function addRoute(journey, colour) {
