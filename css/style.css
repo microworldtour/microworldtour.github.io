@@ -104,3 +104,14 @@ a:hover, a:focus {
     clear: both;
     padding-top: 8px;
 }
+
+#mahiri {
+    display: inline-block;
+    background: url("../img/black-ribbon.png") no-repeat bottom right;
+    padding-right: 8px;
+}
+
+.figure {
+    display: block;
+    margin: 1em auto;
+}

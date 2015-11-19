@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/leaflet.css" />
         <script src="/js/leaflet.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python"></script>
     </head>
     <body>
         <header>
@@ -25,6 +26,64 @@
         <div class="content">
             <!-- ADD NEW ENTRIES HERE -->
             <!-- OLDER ENTRIES GO AT THE BOTTOM -->
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Monday, 18th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>I just broke the board. I think that happened when I
+                    connected a 6V battery pack to it while working on the
+                    robot.</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Monday, 17th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>I received Mahiri micro:bit and put it into simple
+                    robot, creating micro:bot:</p>
+                    <p><img class="figure" src="../img/microbot.jpg"
+                        alt="Mahiri in a robot"></p>
+                    <p>The robot is very simple, build using ready parts and
+                    some two-sided adhesive tape, without soldering or any
+                    special tools (except for a screwdriver to attach the
+                    wheels to the servos).</p>
+                    <p>I got the servos to move by using the
+                    <code class="prettyprint">pin.write_analog()</code>, which
+                    outputs PWM signal on the
+                    pin:</p>
+                    <pre class="prettyprint">&gt;&gt;&gt; import microbit
+
+&gt;&gt;&gt; microbit.pin0.set_analog_period(20) # 50Hz
+&gt;&gt;&gt; microbit.pin1.set_analog_period(20)
+
+&gt;&gt;&gt; microbit.pin0.write_analog(20)
+&gt;&gt;&gt; microbit.pin1.write_analog(122)</pre>
+                    <p>You can also read the sensor very easily:</p>
+                    <pre class="prettyprint">&gt;&gt;&gt; import microbit
+
+&gt;&gt;&gt; print(microbit.pin2.read_analog())</pre>
+                    <p>The next task is to actually write some
+                    obstacle-avoidance code and upload it into the board.
+                    Creating all the accounts and getting all the tools to work
+                    so far proves to be a little difficult.</p>
+                </div>
+            </div>
             <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
                 <div class="headline"> <!-- Contains details of recipient -->
                     <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
