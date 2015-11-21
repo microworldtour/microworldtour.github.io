@@ -44,14 +44,17 @@ a:hover, a:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .content { width: 768px; }
+    img { max-width: 740px; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .content { width: 420px; }
+    img { max-width: 400px; }
 }
 
 @media only screen and (max-width: 480px) {
     .content { width: 300px; }
+    img { max-width: 280px; }
 }
 
 .video-container {
