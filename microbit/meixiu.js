@@ -7,6 +7,12 @@ var meixiuMicrobit = [{
     options: {
         icon: meixiu_icon
     }
+}, {
+    popup: "Tom received Mei-Xiu.",
+    lonLat: [51.2, 0.26],
+    options: {
+        icon: meixiu_icon
+    }
 }];
 
 meixiuMicrobit.forEach(addMarker);
