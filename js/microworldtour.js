@@ -19,6 +19,35 @@ var MicroIcon = L.Icon.extend({
     }
 });
 
+var home_icon = new MicroIcon({iconUrl: '/img/home.png'})
+
 function addMarker(element, index, array) {
-    L.marker(element.lonLat, element.options).addTo(map).bindPopup(element.popup);
+    if(index===0) {
+        L.marker(element.lonLat, {
+            icon: home_icon
+        }).addTo(map).bindPopup('Nicholas posted all the micro:bits from Towcester.');
+    } else {
+        L.marker(element.lonLat, element.options).addTo(map).bindPopup(element.popup);
+    }
+}
+
+function addRoute(journey, colour) {
+    var lonlats = [];
+    journey.forEach(function (element, index, array) {
+        lonlats.push(element.lonLat);
+    });
+    var arrow = L.polyline(lonlats, {
+        weight: 2,
+        color: colour
+    }).addTo(map);
+    var arrowHead = L.polylineDecorator(arrow).addTo(map);
+    var arrowOffset = 0;
+
+    var anim = window.setInterval(function() {
+        arrowHead.setPatterns([
+            {offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize: 8, polygon: false, pathOptions: {stroke: true, color: colour}})}
+        ])
+        if(++arrowOffset > 100)
+            arrowOffset = 0;
+    }, 100);
 }

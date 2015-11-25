@@ -1,4 +1,5 @@
 var meixiu_icon = new MicroIcon({iconUrl: '/img/meixiu.png'})
+var meixiu_colour = '#a83fd8';
 
 var meixiuMicrobit = [{
     popup: "Nicholas posted Mei-Xiu micro:bit from here.",
@@ -6,6 +7,13 @@ var meixiuMicrobit = [{
     options: {
         icon: meixiu_icon
     }
+}, {
+    popup: "Tom received Mei-Xiu.",
+    lonLat: [51.2, 0.26],
+    options: {
+        icon: meixiu_icon
+    }
 }];
 
 meixiuMicrobit.forEach(addMarker);
+addRoute(meixiuMicrobit, meixiu_colour);

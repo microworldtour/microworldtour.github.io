@@ -1,4 +1,5 @@
 var mohandas_icon = new MicroIcon({iconUrl: '/img/mohandas.png'})
+var mohandas_colour = '#d4b81b';
 
 var mohandasMicrobit = [{
     popup: "Nicholas posted Mohandas micro:bit from here.",
@@ -9,3 +10,4 @@ var mohandasMicrobit = [{
 }];
 
 mohandasMicrobit.forEach(addMarker);
+addRoute(mohandasMicrobit, mohandas_colour);
