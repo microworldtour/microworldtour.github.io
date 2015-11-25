@@ -7,6 +7,12 @@ var monifaMicrobit = [{
     options: {
         icon: monifa_icon
     }
+}, {
+    popup: "Radomir put Monifa into a robot.",
+    lonLat: [47.366667, 8.55],
+    options: {
+        icon: monifa_icon
+    }
 }];
 
 monifaMicrobit.forEach(addMarker);

@@ -31,6 +31,52 @@
             <!-- OLDER ENTRIES GO AT THE BOTTOM -->
             <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
                 <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Tuesday, 23rd November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>I received Monifa, and put it on the robot in Mahiri's
+                    place. Then I tried to get the robot going, but ran into
+                    some problems with the PWM signal from the <b>micro:bit</b>.</p>
+                    <p>It turned out to be two separate problems. One is that
+                    setting the PWM period doesn't seem to work reliably at the
+                    moment. I actually went to my local hackerspace and used
+                    their osciloscope to look at the signal:</p>
+                    <p><img class="figure" src="../photo/IMG_20151124_203956.jpg"></p>
+                    <p>Hopefully that will be fixed before it's shipped.</p>
+                    <p>The other problem was powering the servos with 3V from
+                    the two AAA batteries that I have used. Turns out that servos
+                    rated for 4.6V don't really like that. I replaced the batteries
+                    with a 3.7V LiPo battery, and now it works much better.</p>
+                    <p><img class="figure" src="../photo/IMG_20151125_105637s.jpg"></p>
+                    <p>I also figured out how to append the Python script at the end
+                    of the hex file with the firmware. Turns out that after you run
+                    it through the "hexlify.py" script and append at the end, you
+                    still need to find and move the "end of file" line, which looks like this:</p>
+                    <pre>:00000001FF</pre>
+                    <p>Then just drag-and-drop the file into <b>micro:bit</b>, and the robot
+                    can go on its own:</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iVpkl9NlzB0" frameborder="0" allowfullscreen></iframe>
+                    <p>Now I just need to make it use that sensor (and maybe the compass too?).</p>
+                    <p>By the way, I also got an edge connector, to get to all the other pins on this board. After some assembly, it looks like this:</p>
+                    <p><img class="figure" src="../photo/IMG_20151124_154459.jpg"></p>
+                    <p>I like how they added the three rows of pins at the
+                    bottom, for easily connecting your own stuff. But I hate
+                    that they got the order of the two power rows wrong. It
+                    should be ground-power-signal, from the top, not
+                    power-ground-signal. This way you cannot connect RC hobby
+                    servos to this or other common sensors (ground-power-signal
+                    is a kind of a standard). Oh well.</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
                     <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
                     <p>
                         <span class="name">Nicholas Tollervey</span>
