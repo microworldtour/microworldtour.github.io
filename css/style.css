@@ -30,10 +30,6 @@ header {
     border-bottom: 1px #999 solid;
 }
 
-p {
-    margin: 8px 0 8px 0;
-}
-
 .entry {
 }
 
@@ -85,7 +81,7 @@ a:hover, a:focus {
 }
 
 .entry p {
-    margin: 0;
+    margin: 8px 0 8px 0;
 }
 
 .entry .headline img {
