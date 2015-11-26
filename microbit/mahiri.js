@@ -8,7 +8,7 @@ var mahiriMicrobit = [{
         icon: mahiri_icon
     }
 }, {
-    popup: "Radomir put Mahiri into a robot.",
+    popup: "Radomir killed Mahiri.",
     lonLat: [47.366667, 8.55],
     options: {
         icon: mahiri_icon
