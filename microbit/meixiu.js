@@ -13,6 +13,12 @@ var meixiuMicrobit = [{
     options: {
         icon: meixiu_icon
     }
+}, {
+    popup: "Mart got his mitts on Mei-Xiu.",
+    lonLat: [52.51, -2.18],
+    options: {
+        icon: meixiu_icon
+    }
 }];
 
 meixiuMicrobit.forEach(addMarker);
