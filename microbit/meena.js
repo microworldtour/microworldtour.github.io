@@ -9,7 +9,7 @@ var meenaMicrobit = [{
     }
  }, {
     popup: "Carol welcomes Meena to sunny San Diego.",
-    lonLat: [-117.2919818, 33.0369867],
+    lonLat: [33.0369867, -117.2919818],
     options: {
         icon: meena_icon
     }
