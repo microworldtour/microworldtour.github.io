@@ -7,6 +7,12 @@ var meenaMicrobit = [{
     options: {
         icon: meena_icon
     }
+ }, {
+    popup: "Carol welcomes Meena to sunny San Diego.",
+    lonLat: [-117.2919818, 33.0369867],
+    options: {
+        icon: meena_icon
+    }
 }];
 
 meenaMicrobit.forEach(addMarker);
