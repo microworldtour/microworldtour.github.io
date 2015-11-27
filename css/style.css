@@ -23,7 +23,6 @@ html, body {
     width: 960px;
     position: relative;
     margin: 0px auto;
-    padding: 0px;
 }
 
 header {
@@ -45,14 +44,17 @@ a:hover, a:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .content { width: 768px; }
+    img { max-width: 740px; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .content { width: 420px; }
+    img { max-width: 400px; }
 }
 
 @media only screen and (max-width: 480px) {
     .content { width: 300px; }
+    img { max-width: 280px; }
 }
 
 .video-container {
@@ -73,12 +75,13 @@ a:hover, a:focus {
 }
 
 .entry {
-    margin-top: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
     clear: both;
 }
 
 .entry p {
-    margin: 0;
+    margin: 8px 0 8px 0;
 }
 
 .entry .headline img {
@@ -103,4 +106,16 @@ a:hover, a:focus {
 .entry .log {
     clear: both;
     padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+#mahiri {
+    display: inline-block;
+    background: url("../img/black-ribbon.png") no-repeat bottom right;
+    padding-right: 8px;
+}
+
+.figure {
+    display: block;
+    margin: 1em auto;
 }

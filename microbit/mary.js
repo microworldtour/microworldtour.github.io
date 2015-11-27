@@ -1,4 +1,5 @@
 var mary_icon = new MicroIcon({iconUrl: '/img/mary.png'})
+var mary_colour = '#5db24a';
 
 var maryMicrobit = [
     {
@@ -11,3 +12,4 @@ var maryMicrobit = [
 ];
 
 maryMicrobit.forEach(addMarker);
+addRoute(maryMicrobit, mary_colour);
