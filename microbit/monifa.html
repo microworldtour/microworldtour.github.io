@@ -37,7 +37,62 @@
                         <span class="location">Z&uuml;rich, CH.</span>
                     </p>
                     <p>
-                        <span class="date">Wednesday, 24th November 2015</span>
+                        <span class="date">Wednesday, 26th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Today was a programming day. I sat down and wrote the
+                    code that controls both <b>micro:bot</b> and <b>micro:bob</b>.
+                    The <b>micro:bob</b> is quite simple &mdash; it only has
+                    a preprogrammed sequence of leg movements for walking.
+                    I made a <code>Servo</code> class for convenience, and
+                    then some functions for making a step with left and right
+                    legs. I also added some faces. I should probably also add
+                    some turning and maybe a small dance, but I was pressed for
+                    time, so I left that for some other time. For now, behold,
+                    <b>micro:bob</b> walking:</p>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/khRb_HOsX6c" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>The small shaking at the beginning is there to work
+                    around a bug with the PWM signal. Hopefully this will get
+                    fixed and won't be needed anymore.</p>
+                    <p>You can also see that the robot twitches a little when
+                    it's just standing still. That's another bug in the PWM.</p>
+                    <p>All the code is available in the <a src="https://bitbucket.org/thesheep/micro-bob/src">micro:bob
+                    repository</a>.</p>
+                    <p>Next comes the <b>micro:bot</b>. I already had it riding
+                    across my room, but now it's time to add some intelligence.
+                    I started by checking how fast it goes straight and rotates,
+                    so that I could use proper timing for the commands that make
+                    it go a specified distance and turn a specified angle. Having
+                    done that, I proceeded to calibrate the distance sensor it
+                    has mounted at the front (just a simple SHARP sensor from
+                    Pololu, but note that it has to run on 3V). Then I coded
+                    a simple obstacle avoidance procedure: if the distance
+                    sensor shows an obstacle less than about 10cm ahead, then
+                    stop, turn 20° to the left, check the distance, turn back
+                    and 20° the right, check distance, turn back, compare the
+                    two distances and turn 60° in the direction that has more
+                    free space. It works surprisingly well, as long as the
+                    robot doesn't hit something that it didn't see:</p>
+                    <div class="video-container">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/0ddh4n7rcWk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>The code is in the <a src="https://bitbucket.org/thesheep/micro-bob/src">micro:bot repository</a>.</p>
+                    <p>All in all, it was quite fun to use the <b>micro:bit</b> and I hope the kids will have fun too.</p>
+                    <p>As the last thing, I will try to make it control <a src="http://tote.rtfd.org">Tote</a>, a quadruped robot that I'm developing.</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Wednesday, 25th November 2015</span>
                     </p>
                 </div>
                 <div class="log"> <!-- Contains a log of the results -->
@@ -65,7 +120,7 @@
                         <span class="location">Z&uuml;rich, CH.</span>
                     </p>
                     <p>
-                        <span class="date">Tuesday, 23rd November 2015</span>
+                        <span class="date">Tuesday, 24th November 2015</span>
                     </p>
                 </div>
                 <div class="log"> <!-- Contains a log of the results -->
