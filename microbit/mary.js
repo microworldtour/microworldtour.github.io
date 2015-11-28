@@ -7,9 +7,9 @@ var maryMicrobit = [
         lonLat: [52.133597, -0.990607],
         options: {
             icon: mary_icon
+        }
     },
-    }
-        {
+    {
         popup: "Mary landed at Chicago, O'Hare airport.",
         lonLat: [41.9825027, -87.8542467],
         options: {
