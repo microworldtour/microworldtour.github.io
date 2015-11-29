@@ -11,6 +11,11 @@ html, body {
     height: 100%;
 }
 
+pre {
+    font-size: 1.2em;
+    white-space: pre-wrap;
+}
+
 .full_page{
     height: 100%;
 }
