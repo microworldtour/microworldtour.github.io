@@ -37,6 +37,57 @@
                         <span class="location">Z&uuml;rich, CH.</span>
                     </p>
                     <p>
+                        <span class="date">Wednesday, 29th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>I finally found some time to work on connecting the
+                    micro:bit to my super-cheap quadruped robot, <a
+                        href="http://tote.rtfd.org">Tote</a>.</p> <p>Since I
+                    need to control a dozen servomechanisms here, I decided
+                    that it's best to not connect them directly to micro:bit
+                    pins (it seems that the current build of Micropython can
+                    only do PWM output on the analog pins, and there are only
+                    six of those), but instead to program the Arduino that
+                    normally controls them to listen over I2C connection, and
+                    move the servos to the positions that it gets from there.
+                    <a href="https://bitbucket.org/thesheep/tote/src/tip/i2cslave/"
+                    >I already had the code for that</a>, because that's how I
+                    plan to connect a Raspberry Pi to it later on.<p>
+                    <p>So uploaded the firmware to the robot, and connected the
+                    I2C lines to the micro:bit:</p>
+                    <p><img class="figure" src="../photo/IMG_20151129_114407.jpg"></p>
+                    <p>Then I connected the micro:bit to USB and tried those
+                    commands:</p>
+                    <pre>
+import ustruct
+import math
+from microbit import i2c
+
+i2c.write(0x04, ustruct('bf', 0, math.radians(45)))
+                    </pre>
+                    <p>This should have moved the tip of the font left leg by
+                    45° forward. But nothing happened. Not even an error.</p>
+                    <p>Surprised, I tried the same thing with a Raspberry Pi:</p>
+                    <p><img class="figure" src="../photo/IMG_20151129_123810.jpg"></p>
+                    <p>This time it worked correctly. It seems that there are
+                    still some problems in the I2C support on the
+                    micro:bit. Unfortunately, this means I will not be able to
+                    control my robot with it just yet. I have to send Monifa
+                    on its way to the next person on the list, so I guess the
+                    next opportunity I will have to try it is when micro:bit
+                    is released to the general public, provided I will be able
+                    to buy one.</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
                         <span class="date">Wednesday, 26th November 2015</span>
                     </p>
                 </div>
