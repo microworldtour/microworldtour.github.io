@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/leaflet.css" />
         <script src="/js/leaflet.js"></script>
         <script src="/js/leaflet.polylineDecorator.min.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python"></script>
     </head>
     <body>
         <header>
@@ -27,6 +28,89 @@
         <div id="map" class="fragment"></div>
         <div class="content">
             <!-- ADD NEW ENTRIES HERE -->
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://s.gravatar.com/avatar/a731099bb357198d1dcb8552adbcdb43?s=80" alt="A picture of Carol" />
+                    <p>
+                        <span class="name">Carol Willing</span>
+                        <span class="location">San Diego, California, USA.</span>
+                    </p>
+                    <p>
+                        <span class="date">Sunday, 29th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Hello again. I have been playing a bit with Meena the micro:bit this evening.</p>
+                    <p>We had a lovely Thanksgiving holiday. In a few days, my son's close friend, Alex, has his 19th birthday.
+                    Time for a birthday party!</p>
+                    <p>Did you know that planning and having a birthday party is a lot like writing a computer
+                    program? Are you interested in learning how? Keep reading.</p>
+                    <p>Let's look at the first part of a computer program for the micro:bit that I wrote this evening.</p>
+
+                    <pre class="prettyprint">
+"""
+happy.py
+
+by Carol Willing
+November 28, 2015
+Public Domain
+
+Use this to display a 'Happy Face' image on micro:bit's 5x5 grid of LEDs.
+
+Remember... Writing a program is similar to planning a birthday party.
+
+Program      Birthday party
+-------      --------------
+'Prepare'    Prepare the room with balloons; order food; pick up a cake.
+'Do'         Do things during the party -- sing, dance, play videogames.
+'Clean'      Clean the table. Tidy up after the party. Take out the rubbish.
+
+"""</pre>
+
+                    <p>This first part of the program, a comment block, tells you the name of the program
+                    and what it does. It's like an invitation to the birthday party. Like the invitation does with party details,
+                    the comment block tells you what will happen in the program.</p>
+
+                    <p>When I host a party, I break it down into three chunks of work: preparing for the party, doing the fun
+                    party activities, and cleaning up after the party. Preparing, doing, and cleaning up are three things that
+                    I do when I write a computer program.</p>
+                    <p>The next image shows the computer program part where I am preparing the information and data that
+                    the program will use. It's like setting up for a party -- a computer party.</p>
+                    <pre class="prettyprint">
+from microbit import *
+
+
+# Prepare. Put the preinstalled images into user friendly variables.
+my_happy_face = Image.HAPPY
+my_sad_face = Image.SAD</pre>
+
+                    <p>Data is prepared. What's next? Let's do some things. We're going to be doing some image display and some sleeping. Display. Sleep. Display. Sleep. Display. Sleep. I'm getting sleepy from doing all this
+                    work.</p>
+
+                    <pre class="prettyprint">
+# Do things! ----&gt; Show the images on the display.
+display.show(my_happy_face)
+sleep(8000)
+
+display.show(my_sad_face)
+sleep(8000)
+
+display.show(my_happy_face)
+sleep(4000)</pre>
+
+                    <p>The program has done a bunch of work. Now what? It's time to clean up after doing the work. We're going to say "Bye" and then clear the display and shut off all of the LEDs. Here's the program code that does the
+                    clean up work.</p>
+
+                    <pre class="prettyprint">
+# Clean up stuff. Display 'BYE' and clear display. (Clean your room too.)
+display.scroll("BYE")
+display.clear()</pre>
+
+                    <p>It's one in the morning here. I should be cleaning up now as well. I need my rest since I have a
+                    birthday party to prepare, do, and clean up. Happy Birthday Alex! Remember, writing a computer program is
+                    like having a party: prepare, do, clean up.</p>
+                </div>
+            </div>
             <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
                 <div class="headline"> <!-- Contains details of recipient -->
                     <img src="https://s.gravatar.com/avatar/a731099bb357198d1dcb8552adbcdb43?s=80" alt="A picture of Carol" />
