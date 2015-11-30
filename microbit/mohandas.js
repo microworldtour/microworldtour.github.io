@@ -7,7 +7,14 @@ var mohandasMicrobit = [{
     options: {
         icon: mohandas_icon
     }
-}];
+},{
+    popup: "Mark works on Neopixel(Ws2812) library.",
+    lonLat: [-36.83, 174.74],
+    options: {
+        icon: mohandas_icon
+    }
+}
+];
 
 mohandasMicrobit.forEach(addMarker);
 addRoute(mohandasMicrobit, mohandas_colour);
