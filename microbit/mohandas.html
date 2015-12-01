@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/leaflet.css" />
         <script src="/js/leaflet.js"></script>
         <script src="/js/leaflet.polylineDecorator.min.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python"></script>
     </head>
     <body>
         <header>
@@ -28,6 +29,7 @@
         <div class="content">
             <!-- ADD NEW ENTRIES HERE -->
             <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+			<div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
                 <div class="headline"> <!-- Contains details of recipient -->
                     <img src="http://i67.tinypic.com/2rmxzf4.jpg" alt="One of Mark's Neon Artworks" />
                     <p>
@@ -35,11 +37,98 @@
                         <span class="location">Auckland, NZ.</span>
                     </p>
                     <p>
-                        <span class="date">Friday, 27th November 2015</span>
+                        <span class="date">Tuesday, 1st December 2015</span>
                     </p>
                 </div>
                 <div class="log"> <!-- Contains a log of the results -->
-                    <p>Yay the Microbit arrived today. I'll start setting up 
+					<p>The fire simulation is working pretty well but a diffuser would soften the pinpoints and make it look much better.
+					The simplest way is to put a piece of paper on top of the LEDs. It needs some separation between the LEDs and the paper
+					to soften the glow. So I decided to do it the hard way and quickly write something in OpenSCAD and print
+					it out on a 3D printer. The 3D file is hosted on thingiverse here: 
+					<a href="https://github.com/Neon22/Microbit-code">Microbit Diffuser</a></p>
+					<p><img class="figure" src="http://i67.tinypic.com/2v3r38m.jpg"></p>
+					<p>The program uses the two buttons to control the delay between frames and the amount of interpolation that occurs
+					between new lines of fire being added. The program works in the following way:</p>
+					<p>It starts by making a line of brightness points on the bottom row of the display. 
+					Each time it generates a new line, it moves the previous one up. But this is not what makes it look like fire.</p>
+					<p>To do this we do interpolation frames between the major "new line of fire" frames. The interpolation looks
+					at a line and its preceeding one and performs an interpolation to calculate an intermediate frame.
+					This is done several times before a new line of fire points is added to the bottom row.</p>
+					<p>We also multiply the resulting pixel values by a mask. This mask tapers off the values
+					and gives us a kind of shape to the grid instead of a square block.</p>
+					<p>Here's a video of the fire in action, both without and with the 3D diffuser.</p>
+					<div class="video-container">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/RGkcIaoIJJc" frameborder="0" allowfullscreen></iframe>
+					</div>
+                </div>
+            </div>
+			<div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="http://i67.tinypic.com/2rmxzf4.jpg" alt="One of Mark's Neon Artworks" />
+                    <p>
+                        <span class="name">Mark Schafer</span>
+                        <span class="location">Auckland, NZ.</span>
+                    </p>
+                    <p>
+                        <span class="date">Monday, 30th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Finally got everything sorted out, building, checkouts, talking to the Microbit. All set to go.
+					Thought I'd start with a little program to simulate fire on the display. I'm using the 
+					mechanism where you type in a command and it transfers the program to the Microbit, runs it
+                    and reports any messages (errors, print(), etc) directly back to you. Good for debugging. Looks like this:
+                    <pre class="prettyprint">micropython/tools/pyboard.py /dev/ttyACM0 your_code.py</pre>Where the "pyboard.py" program is from the cloned 
+					<a href="https://github.com/bbcmicrobit/micropython">repository</a>, "your_code.py" is your
+					program, and "ttyACM0" is the USB port for communicating with the Microbit.</p>
+					<p>So I started a fire simulation program. Needed to choose between making and updating
+					an Image, and then telling the display to show it, or setting pixel values directly in the display.
+					In the end I went with <pre class="prettyprint">display.set_pixel(x, y, value)</pre> to make the code small.
+					There's nota lot of room on the Microbit and all the comments are  included in the memory footprint of the code.
+					This means I need to try to keep the programs small.</p>
+					<p>The code for this is on the <a href="https://github.com/Neon22/Microbit-code">github repo here</a>
+					</p>
+					<p>The fire simulation is working pretty well but a diffuser would soften the pinpoints and make it look much better.
+					I'll try for one tomorrow. Here we can see the code that generates a new line of fire points <pre class="prettyprint">
+# Generate a new bottom row of random values for the flames
+def generate_line(line, start=min_brightness, end=max_brightness):
+    "start and end define range of dimmest to brightest 'flames'"
+    for i in range(display_width):
+        line[i] = start + microbit.random(end-start)</pre>The function takes in an array of 5 values, called line, and
+		puts 5 new random values into it. The range of the values represents the brightness of the flames.</p>
+                </div>
+            </div>
+            <!-- OLDER ENTRIES GO AT THE BOTTOM -->
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="http://i67.tinypic.com/2rmxzf4.jpg" alt="One of Mark's Neon Artworks" />
+                    <p>
+                        <span class="name">Mark Schafer</span>
+                        <span class="location">Auckland, NZ.</span>
+                    </p>
+                    <p><span class="date">Friday, 27th November 2015</span></p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Spent the day setting up my Ubuntu14.04LTS machine and getting git and the other tools
+                    on. Because I'm developing a new library, I have more to do than the usual user.</p>
+                    <p>Needed to work out how to build from the repo using Yotta, as well as download and
+                    connect using a serial terminal program. I ended up using <a href="https://apps.ubuntu.com/cat/applications/gtkterm/"> gtkterm</a> which is pretty useful
+                    on Linux. Making lots of notes to pass back to Nicholas for the next person.</p>
+					<p>Typing: <pre class="prettyprint">dmesg | grep tty</pre> at a linux command line prompt tells you which
+					serial port the Microbit connected as, when you plugged it in.</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="http://i67.tinypic.com/2rmxzf4.jpg" alt="One of Mark's Neon Artworks" />
+                    <p>
+                        <span class="name">Mark Schafer</span>
+                        <span class="location">Auckland, NZ.</span>
+                    </p>
+                    <p><span class="date">Saturday, 28th November 2015</span></p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Yay the Microbit arrived today. I'll start setting up
                     the machine and logging how it goes tomorrow. Very exciting!</p>
                 </div>
             </div>
