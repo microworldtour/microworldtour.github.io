@@ -37,7 +37,74 @@
                         <span class="location">Z&uuml;rich, CH.</span>
                     </p>
                     <p>
-                        <span class="date">Wednesday, 29th November 2015</span>
+                        <span class="date">Monday, 30th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>After yesterday's failure I couldn't sleep. Monifa
+                    was already packed up, ready to be sent to the next
+                    person in the morning, and I spent the night reading
+                    the I2C specification and Atmel's notes on TWI on AVR.</p>
+                    <p>In the morning, after reading all the helpful messages
+                    on the issue that I reported, I decided to quickly give
+                    it one more try, as I got one idea that might possibly work.
+                    It turns out, that the address of the I2C device can be
+                    specified in two formats. I used the more common 7 bit
+                    format, but there is also the 8 bit format. Sure enough,
+                    micro:bit uses the latter format, and when I shifted by
+                    I2C address to the left one bit, everything suddenly worked.</p>
+                    <p>Don't worry, this will be fixed soon, and micro:bit
+                    will be using the more popular 7 bit format, just like
+                    Arduino and Raspberry Pi do.</p>
+                    <p>But that was just the beginning of the work. I could
+                    move the individual servos of the robot, but I wanted it
+                    to walk. So I wrote a quick e-mail to the person who was
+                    supposed to get Monifa after me, apologizing for the delay,
+                    and worked on it some more in the evening.</p>
+                    <p>I will spare you the tale of the frustrating hours of
+                    tuning the positions and getting the inverse kinematics
+                    calculations right. I have done it many times before, but
+                    somehow it haven't become easier. Finally, I could control
+                    the position of each leg individually and of all of them
+                    at once:<p>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VZ7vxIEno0o" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>But the work is not finished yet. Next comes programming
+                    the actual walking. I decided to start with the creep gait,
+                    which is statically stable and slow -- perfect for testing.
+                    I wrote all the code that was supposed to move the robot,
+                    and got a <i>MemoryError</i>. The poor Monifa simply couldn't
+                    remember all the things I made it do. Sigh. I went over
+                    all the code and optimized what I could. Finally, after
+                    squashing some additional bugs that crept in there, my
+                    code kinda worked when run from the Python console. So I
+                    added a few lines to make it run by default, so that I
+                    could unplug the robot from the computer and make it
+                    walk on its own. And I got a <i>RuntimeError: maximum
+                    recursion depth exceeded.</i> So I went over the code
+                    again, flattening what I could and inlining functions
+                    and methods. Finally, I got it to walk:</p>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SMqX_yPnfVI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>I know, it looks very sick and weak. That's probably
+                    how it feels too. It was a quick hack, and there is a
+                    lot I had to remove or simplify. I'm also sure that a
+                    lot could be improved. But I got it done and the next
+                    person is waiting, so Monifa goes on its way today.</p>
+                    <p>In case you want to look at the code, <a href="https://bitbucket.org/thesheep/micro-tote">it's in this repository.</a></p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Sunday, 29th November 2015</span>
                     </p>
                 </div>
                 <div class="log"> <!-- Contains a log of the results -->
@@ -64,7 +131,7 @@ import ustruct
 import math
 from microbit import i2c
 
-i2c.write(0x04, ustruct('bf', 0, math.radians(45)))
+i2c.write(0x04, ustruct.pack('bf', 0, math.radians(45)))
                     </pre>
                     <p>This should have moved the tip of the font left leg by
                     45° forward. But nothing happened. Not even an error.</p>
