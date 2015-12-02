@@ -37,7 +37,180 @@
                         <span class="location">Z&uuml;rich, CH.</span>
                     </p>
                     <p>
-                        <span class="date">Wednesday, 24th November 2015</span>
+                        <span class="date">Monday, 30th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>After yesterday's failure I couldn't sleep. Monifa
+                    was already packed up, ready to be sent to the next
+                    person in the morning, and I spent the night reading
+                    the I2C specification and Atmel's notes on TWI on AVR.</p>
+                    <p>In the morning, after reading all the helpful messages
+                    on the issue that I reported, I decided to quickly give
+                    it one more try, as I got one idea that might possibly work.
+                    It turns out, that the address of the I2C device can be
+                    specified in two formats. I used the more common 7 bit
+                    format, but there is also the 8 bit format. Sure enough,
+                    micro:bit uses the latter format, and when I shifted by
+                    I2C address to the left one bit, everything suddenly worked.</p>
+                    <p>Don't worry, this will be fixed soon, and micro:bit
+                    will be using the more popular 7 bit format, just like
+                    Arduino and Raspberry Pi do.</p>
+                    <p>But that was just the beginning of the work. I could
+                    move the individual servos of the robot, but I wanted it
+                    to walk. So I wrote a quick e-mail to the person who was
+                    supposed to get Monifa after me, apologizing for the delay,
+                    and worked on it some more in the evening.</p>
+                    <p>I will spare you the tale of the frustrating hours of
+                    tuning the positions and getting the inverse kinematics
+                    calculations right. I have done it many times before, but
+                    somehow it haven't become easier. Finally, I could control
+                    the position of each leg individually and of all of them
+                    at once:<p>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VZ7vxIEno0o" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>But the work is not finished yet. Next comes programming
+                    the actual walking. I decided to start with the creep gait,
+                    which is statically stable and slow -- perfect for testing.
+                    I wrote all the code that was supposed to move the robot,
+                    and got a <i>MemoryError</i>. The poor Monifa simply couldn't
+                    remember all the things I made it do. Sigh. I went over
+                    all the code and optimized what I could. Finally, after
+                    squashing some additional bugs that crept in there, my
+                    code kinda worked when run from the Python console. So I
+                    added a few lines to make it run by default, so that I
+                    could unplug the robot from the computer and make it
+                    walk on its own. And I got a <i>RuntimeError: maximum
+                    recursion depth exceeded.</i> So I went over the code
+                    again, flattening what I could and inlining functions
+                    and methods. Finally, I got it to walk:</p>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SMqX_yPnfVI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>I know, it looks very sick and weak. That's probably
+                    how it feels too. It was a quick hack, and there is a
+                    lot I had to remove or simplify. I'm also sure that a
+                    lot could be improved. But I got it done and the next
+                    person is waiting, so Monifa goes on its way today.</p>
+                    <p>In case you want to look at the code, <a href="https://bitbucket.org/thesheep/micro-tote">it's in this repository.</a></p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Sunday, 29th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>I finally found some time to work on connecting the
+                    micro:bit to my super-cheap quadruped robot, <a
+                        href="http://tote.rtfd.org">Tote</a>.</p> <p>Since I
+                    need to control a dozen servomechanisms here, I decided
+                    that it's best to not connect them directly to micro:bit
+                    pins (it seems that the current build of Micropython can
+                    only do PWM output on the analog pins, and there are only
+                    six of those), but instead to program the Arduino that
+                    normally controls them to listen over I2C connection, and
+                    move the servos to the positions that it gets from there.
+                    <a href="https://bitbucket.org/thesheep/tote/src/tip/i2cslave/"
+                    >I already had the code for that</a>, because that's how I
+                    plan to connect a Raspberry Pi to it later on.<p>
+                    <p>So uploaded the firmware to the robot, and connected the
+                    I2C lines to the micro:bit:</p>
+                    <p><img class="figure" src="../photo/IMG_20151129_114407.jpg"></p>
+                    <p>Then I connected the micro:bit to USB and tried those
+                    commands:</p>
+                    <pre class="prettyprint">
+import ustruct
+import math
+from microbit import i2c
+
+i2c.write(0x04, ustruct.pack('bf', 0, math.radians(45)))
+                    </pre>
+                    <p>This should have moved the tip of the font left leg by
+                    45° forward. But nothing happened. Not even an error.</p>
+                    <p>Surprised, I tried the same thing with a Raspberry Pi:</p>
+                    <p><img class="figure" src="../photo/IMG_20151129_123810.jpg"></p>
+                    <p>This time it worked correctly. It seems that there are
+                    still some problems in the I2C support on the
+                    micro:bit. Unfortunately, this means I will not be able to
+                    control my robot with it just yet. I have to send Monifa
+                    on its way to the next person on the list, so I guess the
+                    next opportunity I will have to try it is when micro:bit
+                    is released to the general public, provided I will be able
+                    to buy one.</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Wednesday, 26th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Today was a programming day. I sat down and wrote the
+                    code that controls both <b>micro:bot</b> and <b>micro:bob</b>.
+                    The <b>micro:bob</b> is quite simple &mdash; it only has
+                    a preprogrammed sequence of leg movements for walking.
+                    I made a <code>Servo</code> class for convenience, and
+                    then some functions for making a step with left and right
+                    legs. I also added some faces. I should probably also add
+                    some turning and maybe a small dance, but I was pressed for
+                    time, so I left that for some other time. For now, behold,
+                    <b>micro:bob</b> walking:</p>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/khRb_HOsX6c" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>The small shaking at the beginning is there to work
+                    around a bug with the PWM signal. Hopefully this will get
+                    fixed and won't be needed anymore.</p>
+                    <p>You can also see that the robot twitches a little when
+                    it's just standing still. That's another bug in the PWM.</p>
+                    <p>All the code is available in the <a href="https://bitbucket.org/thesheep/micro-bob/src">micro:bob
+                    repository</a>.</p>
+                    <p>Next comes the <b>micro:bot</b>. I already had it riding
+                    across my room, but now it's time to add some intelligence.
+                    I started by checking how fast it goes straight and rotates,
+                    so that I could use proper timing for the commands that make
+                    it go a specified distance and turn a specified angle. Having
+                    done that, I proceeded to calibrate the distance sensor it
+                    has mounted at the front (just a simple SHARP sensor from
+                    Pololu, but note that it has to run on 3V). Then I coded
+                    a simple obstacle avoidance procedure: if the distance
+                    sensor shows an obstacle less than about 10cm ahead, then
+                    stop, turn 20° to the left, check the distance, turn back
+                    and 20° the right, check distance, turn back, compare the
+                    two distances and turn 60° in the direction that has more
+                    free space. It works surprisingly well, as long as the
+                    robot doesn't hit something that it didn't see:</p>
+                    <div class="video-container">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/0ddh4n7rcWk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>The code is in the <a href="https://bitbucket.org/thesheep/micro-bob/src">micro:bot repository</a>.</p>
+                    <p>All in all, it was quite fun to use the <b>micro:bit</b> and I hope the kids will have fun too.</p>
+                    <p>As the last thing, I will try to make it control <a href="http://tote.rtfd.org">Tote</a>, a quadruped robot that I'm developing.</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                    <p>
+                        <span class="name">Radomir Dopieralski</span>
+                        <span class="location">Z&uuml;rich, CH.</span>
+                    </p>
+                    <p>
+                        <span class="date">Wednesday, 25th November 2015</span>
                     </p>
                 </div>
                 <div class="log"> <!-- Contains a log of the results -->
@@ -65,7 +238,7 @@
                         <span class="location">Z&uuml;rich, CH.</span>
                     </p>
                     <p>
-                        <span class="date">Tuesday, 23rd November 2015</span>
+                        <span class="date">Tuesday, 24th November 2015</span>
                     </p>
                 </div>
                 <div class="log"> <!-- Contains a log of the results -->

@@ -8,6 +8,27 @@ var maryMicrobit = [
         options: {
             icon: mary_icon
         }
+    },
+    {
+        popup: "Mary landed at Chicago, O'Hare airport.",
+        lonLat: [41.9825027, -87.8542467],
+        options: {
+            icon: mary_icon
+        }
+    },
+    {
+        popup: "Mary inexplicably made a side trip to Washington, DC Dulles Airport.",
+        lonLat: [38.9531204, -77.4587328],
+        options: {
+            icon: mary_icon
+        }
+    },
+    {
+        popup: "Mary returned to Chicago and was finally delivered to Naomi.",
+        lonLat: [41.8771212, -87.6524593],
+        options: {
+            icon: mary_icon
+        }
     }
 ];
 

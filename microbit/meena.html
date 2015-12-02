@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/leaflet.css" />
         <script src="/js/leaflet.js"></script>
         <script src="/js/leaflet.polylineDecorator.min.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python"></script>
     </head>
     <body>
         <header>
@@ -27,6 +28,271 @@
         <div id="map" class="fragment"></div>
         <div class="content">
             <!-- ADD NEW ENTRIES HERE -->
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS ** CAROL'S THIRD POST ** -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://s.gravatar.com/avatar/a731099bb357198d1dcb8552adbcdb43?s=80" alt="A picture of Carol" />
+                    <p>
+                        <span class="name">Carol Willing</span>
+                        <span class="location">San Diego, California, USA.</span>
+                    </p>
+                    <p>
+                        <span class="date">Monday, 30th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Hello! Last post, I compared writing programs with birthday parties. Here's a quick look at the
+                    happy.py program in action.</p>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sIk17DtfzdQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p>Today, we're going to create a program to play a very simple game with happy faces and sad faces.
+                    Okay, I admit it's not a very exciting game, but I'm still learning how micro:bit and MicroPython
+                    work.</p>
+                    <p>When I am learning to program in a new computer language, I try to write lots of short programs
+                    to understand how things work. Over time, I use cake frosting in fancy colors to put together all
+                    these short programs into one really big program. I'm being a little ridiculous here since the frosting
+                    would make the keyboard and micro:bit pretty sticky. We should save the cake frosting to put together
+                    a stack of cakes to make a really tall, yummy birthday cake.</p>
+                    <p>To put a big program together, we should write a few lines of code to put the shorter programs
+                    together. Not as yummy, but still very helpful.</p>
+                    <p>Let's dive in and look at some code for the faces.py program. See if you can pick out the three
+                    big sections: Prepare. Do. Clean up.</p>
+
+                    <pre class="prettyprint">
+"""
+faces.py
+
+by Carol Willing
+November 29, 2015
+Public Domain
+
+Use this to display happy or sad faces on micro:bit's 5x5 pixel grid of LEDs
+when a user presses the micro:bit's A or B buttons.
+
+Remember the major sections of a program: Prepare. Do. Clean up.
+
+Prepare:  Put face images into variables. Create some variables for counting.
+Do:       Give instructions. Loop and display faces. Share game statistics.
+Clean up: Say bye and clear display.
+
+"""
+# Import the micro:bit library
+from microbit import *
+
+# --------
+# Prepare!
+# --------
+my_happy_face = Image.HAPPY
+my_sad_face = Image.SAD
+
+# Let's track time and count the displayed faces starting at zero.
+time_played = 0
+count_happy_faces = 0
+count_sad_faces = 0
+
+# ----------
+# Do things!
+# ----------
+# Give instructions.
+display.scroll("Hi!")
+sleep(8000)
+display.scroll("If happy, press A button.")
+sleep(8000)
+display.scroll("If sad, press B button.")
+sleep(8000)
+display.scroll("To quit and exit, press both A and B at the same time.")
+sleep(8000)
+
+
+# Use a loop.
+#    'wait' for button presses.
+#    'check' if button is pressed.
+#    'act' by showing a face.
+#    Repeat until both buttons are pressed at the same time.
+while not (button_a.is_pressed() and button_b.is_pressed()):
+    if button_a.is_pressed():
+        display.show(my_happy_face)
+        count_happy_faces += 1
+        sleep(8000)
+        display.clear()
+
+    if button_b.is_pressed():
+        display.show(my_sad_face)
+        count_sad_faces += 1
+        sleep(8000)
+        display.clear()
+
+# Share game statistics.
+#     Use micro:bit's built-in function, running_time(),
+#     to estimate time_played.
+time_played = running_time()
+display.scroll("Time spent playing: ")
+display.scroll(time_played)
+display.scroll("smiles = ")
+display.scroll(count_happy_faces)
+display.scroll("frowns = ")
+display.scroll(count_sad_faces)
+sleep(8000)
+
+# ---------
+# Clean up!
+# ---------
+display.scroll("Bye.")
+display.clear()
+</pre>
+
+                    <p>This first part of the program, a comment block, tells you the name of the program
+                    and what it does.</p>
+                    <pre class="prettyprint">
+"""
+faces.py
+
+by Carol Willing
+November 29, 2015
+Public Domain
+
+Use this to display happy or sad faces on micro:bit's 5x5 pixel grid of LEDs
+when a user presses the micro:bit's A or B buttons.
+
+Remember the major sections of a program: Prepare. Do. Clean up.
+
+Prepare:  Put face images into variables. Create some variables for counting.
+Do:       Give instructions. Loop and display faces. Share game statistics.
+Clean up: Say bye and clear display.
+
+"""</pre>
+
+                    <p>Let's look at the part of the program where we prepare stuff. First, we give user friendly
+                    variable names to the micro:bit's built-in images for HAPPY and SAD. We are also going to
+                    create three variables to keep track of time and counting for the program. We set these counting
+                    variables to zero. Why? When Meena the micro:bit creates a new variable, the micro:bit could put
+                    any value into the variable. By setting count_sad_faces = 0, we make sure that micro:bit doesn't set
+                    count_sad_faces to 983, which would be a lot of unhappy faces.</p>
+                    <pre class="prettyprint">
+# Import the micro:bit library
+from microbit import *
+
+# --------
+# Prepare!
+# --------
+my_happy_face = Image.HAPPY
+my_sad_face = Image.SAD
+
+# Let's track time and count the displayed faces starting at zero.
+time_played = 0
+count_happy_faces = 0
+count_sad_faces = 0</pre>
+
+                    <p>Yikes! I missed lunch. It's important to eat healthy meals. I'm going to go find something
+                    yummy. I'll be back in a bit. Until I return, see if you can figure out what the rest of the
+                    program does.</p>
+                    <p>(Note: the complete program can be found <a href="https://github.com/willingc/my-bit/blob/master/faces.py">here</a>.)</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS ** Carol's SECOND POST ** -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://s.gravatar.com/avatar/a731099bb357198d1dcb8552adbcdb43?s=80" alt="A picture of Carol" />
+                    <p>
+                        <span class="name">Carol Willing</span>
+                        <span class="location">San Diego, California, USA.</span>
+                    </p>
+                    <p>
+                        <span class="date">Sunday, 29th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Hello again. I have been playing a bit with Meena the micro:bit this evening.</p>
+                    <p>We had a lovely Thanksgiving holiday. In a few days, my son's close friend, Alex, has his 19th birthday.
+                    Time for a birthday party!</p>
+                    <p>Did you know that planning and having a birthday party is a lot like writing a computer
+                    program? Are you interested in learning how? Keep reading.</p>
+                    <p>Let's look at the first part of a computer program for the micro:bit that I wrote this evening.</p>
+
+                    <pre class="prettyprint">
+"""
+happy.py
+
+by Carol Willing
+November 28, 2015
+Public Domain
+
+Use this to display a 'Happy Face' image on micro:bit's 5x5 grid of LEDs.
+
+Remember... Writing a program is similar to planning a birthday party.
+
+Program      Birthday party
+-------      --------------
+'Prepare'    Prepare the room with balloons; order food; pick up a cake.
+'Do'         Do things during the party -- sing, dance, play videogames.
+'Clean'      Clean the table. Tidy up after the party. Take out the rubbish.
+
+"""</pre>
+
+                    <p>This first part of the program, a comment block, tells you the name of the program
+                    and what it does. It's like an invitation to the birthday party. Like the invitation does with party details,
+                    the comment block tells you what will happen in the program.</p>
+
+                    <p>When I host a party, I break it down into three chunks of work: preparing for the party, doing the fun
+                    party activities, and cleaning up after the party. Preparing, doing, and cleaning up are three things that
+                    I do when I write a computer program.</p>
+                    <p>The next image shows the computer program part where I am preparing the information and data that
+                    the program will use. It's like setting up for a party -- a computer party.</p>
+                    <pre class="prettyprint">
+from microbit import *
+
+
+# Prepare. Put the preinstalled images into user friendly variables.
+my_happy_face = Image.HAPPY
+my_sad_face = Image.SAD</pre>
+
+                    <p>Data is prepared. What's next? Let's do some things. We're going to be doing some image display and some sleeping. Display. Sleep. Display. Sleep. Display. Sleep. I'm getting sleepy from doing all this
+                    work.</p>
+
+                    <pre class="prettyprint">
+# Do things! ----&gt; Show the images on the display.
+display.show(my_happy_face)
+sleep(8000)
+
+display.show(my_sad_face)
+sleep(8000)
+
+display.show(my_happy_face)
+sleep(4000)</pre>
+
+                    <p>The program has done a bunch of work. Now what? It's time to clean up after doing the work. We're going to say "Bye" and then clear the display and shut off all of the LEDs. Here's the program code that does the
+                    clean up work.</p>
+
+                    <pre class="prettyprint">
+# Clean up stuff. Display 'BYE' and clear display. (Clean your room too.)
+display.scroll("BYE")
+display.clear()</pre>
+
+                    <p>It's one in the morning here. I should be cleaning up now as well. I need my rest since I have a
+                    birthday party to prepare, do, and clean up. Happy Birthday Alex! Remember, writing a computer program is
+                    like having a party: prepare, do, clean up.</p>
+                    <p>(Edit: the complete program can be found <a href="https://github.com/willingc/my-bit/blob/master/happy.py">here</a>.)</p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS ** CAROL's FIRST POST ** -->
+                <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://s.gravatar.com/avatar/a731099bb357198d1dcb8552adbcdb43?s=80" alt="A picture of Carol" />
+                    <p>
+                        <span class="name">Carol Willing</span>
+                        <span class="location">San Diego, California, USA.</span>
+                    </p>
+                    <p>
+                        <span class="date">Thursday, 26th November 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+                    <p>Happy Thanksgiving (for those who celebrate it)! I'm happy to be celebrating this year with family, 
+                    friends, and Meena, the BBC micro:bit.</p>
+                    <p>Meena arrived a few days ago. I took a little tumble the day Meena arrived to sunny San Diego.
+                    I broke some bones in my left foot, but I'm feeling well now. As my bones heal, I will have crutches and a 
+                    stylish black boot to wear for the next two months. Perhaps with Meena's help, I can make the black boot more 
+                    interesting and stylish. Hmm...</p>
+                </div>
+            </div>
             <!-- OLDER ENTRIES GO AT THE BOTTOM -->
             <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
                 <div class="headline"> <!-- Contains details of recipient -->
