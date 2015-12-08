@@ -19,6 +19,12 @@ var meixiuMicrobit = [{
     options: {
         icon: meixiu_icon
     }
+}, {
+    popup: "Mart took Mei-Xui to Picademy.",
+    lonLat: [52.479439, -1.908457],
+    options: {
+        icon: meixiu_icon
+    }
 }];
 
 meixiuMicrobit.forEach(addMarker);
