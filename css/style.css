@@ -16,6 +16,10 @@ pre {
     white-space: pre-wrap;
 }
 
+img {
+    max-width: 940px;
+}
+
 .full_page{
     height: 100%;
 }
