@@ -16,3 +16,5 @@ based on the order of this list):
 * Paul Egan - London, UK. paulegan@mail.com. Developer & dad.
 * Angus Thomas - Horsham, UK. angus.thomas@gmail.com Code Club leader
 * Sophia Ramdass - Rockford, IL USA sramdass@rockfordiqraschool.com Math Teacher and FTC Robotics Coach
+* Chris Foresman - Chicago, IL USA foresmac@gmail.com Senior Systems Engineer, Vokal; Python Programming Instructor, Northwestern University Center for Talent Development
+
