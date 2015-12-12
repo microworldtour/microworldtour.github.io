@@ -14,5 +14,6 @@ based on the order of this list):
 * Pav Andre. London, UK. rootsumsquared+microbit@gmail.com An aspiring standup comedian and all-round geek. @rs2.
 * Cory Benfield - London, UK cory@lukasa.co.uk. Developer of overly complex protocol stacks.
 * Paul Egan - London, UK. paulegan@mail.com. Developer & dad.
-* Angus Thomas - Horsham, UK. angus.thomas@gmail.com Code Club leader
-* Sophia Ramdass - Rockford, IL USA sramdass@rockfordiqraschool.com Math Teacher and FTC Robotics Coach
+* Sophia Ramdass - Rockford, IL USA. sramdass@rockfordiqraschool.com. Math Teacher and FTC Robotics Coach
+* Chris Foresman - Chicago, IL USA. foresmac@gmail.com. Senior Systems Engineer, Vokal; Python Programming Instructor, Northwestern University Center for Talent Development
+

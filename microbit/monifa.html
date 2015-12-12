@@ -31,6 +31,57 @@
             <!-- OLDER ENTRIES GO AT THE BOTTOM -->
             <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
                 <div class="headline"> <!-- Contains details of recipient -->
+                    <img src="https://avatars0.githubusercontent.com/u/1440077?v=3&s=73" alt="A picture of Angus" />
+                    <p>
+                        <span class="name">Angus Thomas</span>
+                        <span class="location">Horsham, UK.</span>
+                    </p>
+                    <p>
+                        <span class="date">Saturday, 12th December 2015</span>
+                    </p>
+                </div>
+                <div class="log"> <!-- Contains a log of the results -->
+		<p>When Monifa arrived, I started off reading Nicholas Tollervey's informative account of how MicroPython came to be implemented on the micro:bit, then I set about getting the tools on place on Fedora to build the MicroPython image for the micro:bit's ARM processor. The source, and a README, are <a href="https://github.com/bbcmicrobit/micropython">here</a>.</p>
+		<p>On x86-64 Fedora 23, I needed to install the following RPMs:</p>
+		<pre>cmake ninja-build srecord gcc ninja-build libffi-devel redhat-rpm-config openssl-devel picocom pyserial</pre>
+		<p>When it came to cross-compiling the actual image, I downloaded the gcc-arm-linux-gnu tarball from <a href="https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q3-update/+download/gcc-arm-none-eabi-4_9-2015q3-20150921-linux.tar.bz2">here</a>.</p>
+		<p>Fedora does come with a version of gcc for ARM, the gcc-arm-linux-gnu RPM. That may well support building binaries for the micro:bit, but I didn't persevere long in trying to make it work before deciding to use the version of gcc from the tarball. </p>
+<p>The other required package which isn't available for Fedora is Yotta. To get that. I installed the python-virtualenv and python-pip RPMs, set up a vrtual env, and then used pip to install Yotta. </p>
+		<p>Updating Yotta requires access to a private repo, as described <a href="https://github.com/lancaster-university/microbit">here</a>. Joe Finney replied almost immediately to my request for access, so I should be able to continue with this.</p>
+		<p>With that, I was able to compile the micropython image. Nautilus supports transferring the image to the device by dragging and dropping, which was nice and uncomplicated. </p>
+		<p>With that image booted on the micro:bit, I was able to ge to the interactive python shell using:</p>
+		<pre>picocom /dev/ttyACM0 -b 115200</pre>
+		<p>Next thing was to make some images with different programs linked into them. I downloaded <a href="http://www.stuffaboutcode.com/2015/11/snake-on-microbit-using-micropython.html">Martin O'Hanlon's snake code</a>, and linked that to the original micropython image:</p>
+		<pre>./tools/makecombinedhex.py -o snake.hex build/bbc-microbit-classic-gcc-nosd/source/microbit-micropython.hex snake.py</pre>
+		<p>Radomir generously send his micro:bob robot (described in his posts below) along with Monifa, so I grabbed <a href="https://bitbucket.org/thesheep/micro-bob/src">his code</a>, and made an image with that linked into it. Radomir told me the two key pieces of information required to work the robot: It needs a 3.7 volt LiPo battery, and, when it comes to connecting the battery, "Plus is on the lower pin, and minus on the higher (outermost) pin of the PCB."</p>
+		</p>With all that, I was ready to head to the weekly code club at my local primary school and let the children try out the micro:bit. They had a lot of fun, using the interactive shell to their names on the LEDs, then playing Snake, then we wrote a very simple voting program: </p>
+
+		<pre>
+from microbit import *
+
+display.clear()
+
+while True:
+    if button_a.is_pressed() and button_b.is_pressed():
+        display.show(Image.HEART)
+        sleep(1000)
+        display.clear()
+        break
+    elif button_a.is_pressed():
+        display.show(Image.YES)
+    elif button_b.is_pressed():
+        display.show(Image.NO)
+    sleep(100)
+
+		</pre>
+
+		<p>They enjoyed holding up the micro:bit to display their opinion on all kinds of questions. </p>
+		<p>Radomir's walking robot was the main attraction. As well as, you know, <b>AN ACTUAL WALKING ROBOT</b>, they were interested in the code, which is more complex than what they're used to, but they were able to understand when they took it in stages. </p>
+		<p>I'll post some updates to the docs at <a href="http://microbit-micropython.readthedocs.org/en/latest/">microbit-micropython.readthedocs.org/en/latest/</a> with details on using Fedora. </p>
+                </div>
+            </div>
+            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                <div class="headline"> <!-- Contains details of recipient -->
                     <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
                     <p>
                         <span class="name">Radomir Dopieralski</span>

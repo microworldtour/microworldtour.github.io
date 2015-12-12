@@ -13,6 +13,12 @@ var monifaMicrobit = [{
     options: {
         icon: monifa_icon
     }
+}, {
+    popup: "Angus took Monifa to school.",
+    lonLat: [51.043121, -0.347443],
+    options: {
+        icon: monifa_icon
+    }
 }];
 
 monifaMicrobit.forEach(addMarker);
