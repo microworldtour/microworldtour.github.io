@@ -24,6 +24,11 @@ var meixiuMicrobit = [{
     lonLat: [52.479439, -1.908457],
     options: {
         icon: meixiu_icon
+}, {
+    popup: "Mei-Xui travelled a massive 23 miles to Stewart",
+    lonLat: [52.305081, -1.958886],
+    options: {
+        icon: meixiu_icon
     }
 }];
 
