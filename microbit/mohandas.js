@@ -13,6 +13,12 @@ var mohandasMicrobit = [{
     options: {
         icon: mohandas_icon
     }
+},{
+    popup: "Nick (a different one) works on the microbit's listening skills.",
+    lonLat: [-27.37, 153.01],
+    options: {
+        icon: mohandas_icon
+    }
 }
 ];
 
