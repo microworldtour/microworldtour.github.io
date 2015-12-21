@@ -26,7 +26,7 @@ var meixiuMicrobit = [{
         icon: meixiu_icon
     }
 }, {
-    popup: "Mei-Xui travelled a massive 23 miles to Stewart",
+    popup: "Mei-Xui visited Stewart and a robot, where it had a disco party.",
     lonLat: [52.305081, -1.958886],
     options: {
         icon: meixiu_icon
