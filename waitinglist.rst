@@ -15,3 +15,4 @@ based on the order of this list):
 * Cory Benfield - London, UK cory@lukasa.co.uk. Developer of overly complex protocol stacks.
 * Paul Egan - London, UK. paulegan@mail.com. Developer & dad.
 * Angus Thomas - Horsham, UK. angus.thomas@gmail.com Code Club leader
+* Joshua Jay herman - Chicago, IL zitterbewegung@gmail.com Member of chipy and CEO of A Cons Apart developing software for 3d printing and search by shape.
