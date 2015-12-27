@@ -15,4 +15,5 @@ based on the order of this list):
 * Paul Egan - London, UK. paulegan@mail.com. Developer & dad.
 * Sophia Ramdass - Rockford, IL USA. sramdass@rockfordiqraschool.com. Math Teacher and FTC Robotics Coach
 * Chris Foresman - Chicago, IL USA. foresmac@gmail.com. Senior Systems Engineer, Vokal; Python Programming Instructor, Northwestern University Center for Talent Development
-
+* Angus Thomas - Horsham, UK. angus.thomas@gmail.com Code Club leader
+* Joshua Jay herman - Chicago, IL zitterbewegung@gmail.com Member of chipy and CEO of A Cons Apart developing software for 3d printing and search by shape.
