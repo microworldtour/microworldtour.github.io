@@ -31,6 +31,12 @@ var meixiuMicrobit = [{
     options: {
         icon: meixiu_icon
     }
+}, {
+    popup: "Mei-Xui and Eleni explored the emotions of plant life.",
+    lonLat: [51.535540, -0.003631],
+    options: {
+        icon: meixiu_icon
+    }
 }];
 
 meixiuMicrobit.forEach(addMarker);
