@@ -7,6 +7,9 @@ var tile_layer_url = "https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_toke
 L.tileLayer(tile_layer_url, {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
+    minZoom: 3,
+    continuousWorld: false,
+    noWrap: true,
     id: "ntoll.ciggtxg9c0snivuknl4epgti3",
     accessToken: api_key
 }).addTo(map);
@@ -47,7 +50,7 @@ function addRoute(journey, colour) {
         arrowHead.setPatterns([
             {offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize: 8, polygon: false, pathOptions: {stroke: true, color: colour}})}
         ])
-        if(++arrowOffset > 100)
+        if((arrowOffset+=0.5) > 100)
             arrowOffset = 0;
-    }, 100);
+    }, 20);
 }

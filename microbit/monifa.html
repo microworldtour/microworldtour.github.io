@@ -7,346 +7,402 @@
         <link rel="shortcut icon" href="/img/microicon.png" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/leaflet.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500italic' rel='stylesheet' type='text/css'>
         <script src="/js/leaflet.js"></script>
         <script src="/js/leaflet.polylineDecorator.min.js"></script>
         <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python"></script>
     </head>
-    <body>
+    <body class="monifa">
         <header>
-            <a href="/">Home</a> |
-            <a href="/about.html">About</a> |
-            <a href="/microbit/mary.html" id="mary">Mary</a> |
-            <a href="/microbit/meena.html" id="meena">Meena</a> |
-            <a href="/microbit/mahiri.html" id="mahiri">Mahiri</a> |
-            <a href="/microbit/meixiu.html" id="meixiu">Mei-Xiu</a> |
-            <a href="/microbit/mohandas.html" id="mohandas">Mohandas</a> |
-            <a href="/microbit/monifa.html" id="monifa">Monifa</a>
+            <h1 class="homepage-title"><span>micro:bit</span><span class="microbit large-icon"></span><span>worldtour</span><span class="shadow"></span></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/microbit/mary.html" id="mary" class="mary"><span>Mary</span><div class="microbit mary"></div></a></li>
+                    <li><a href="/microbit/meena.html" id="meena" class="meena"><span>Meena</span><div class="microbit meena"></div></a></li>
+                    <li><a href="/microbit/meixiu.html" id="meixiu" class="meixiu"><span>Mei Xiu</span><div class="microbit meixiu"></div></a></li>
+                    <li><a href="/microbit/mohandas.html" id="mohandas" class="mohandas"><span>Mohandas</span><div class="microbit mohandas"></div></a></li>
+                    <li><a href="/microbit/monifa.html" id="monifa" class="monifa"><span>Monifa</span><div class="microbit monifa"></div></a></li>
+                    <li> <a href="/microbit/mahiri.html" id="mahiri" class="mahari"><span>Mahari</span><div class="microbit dead"></div></a></li>
+                    <li><a href="/about.html" class="about"><span>About</span>
+                        <span class="globe">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="200px" height="200px" viewBox="0 0 439.333 439.333" enable-background="new 0 0 439.333 439.333"
+                                 xml:space="preserve">
+                                 <g class="earth">
+                                    <circle fill="#49C3CC" cx="219.667" cy="219.667" r="200"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="M67.603,219.667
+                                        c0-12.524,1.514-24.694,4.369-36.338c11.039-45.021,42.126-82.168,83.258-101.438"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="36" stroke-linecap="round" stroke-miterlimit="10" d="M130.964,319.663
+                                        C103.381,295.176,86,259.451,86,219.667C86,145.844,145.844,86,219.667,86"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M38.639,292.29c-9.013-22.445-13.972-46.955-13.972-72.623c0-62.626,29.522-118.357,75.41-154.035"/>
+                                    <path opacity="0.51" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M85.99,343.667c-30.194-32.535-48.656-76.111-48.656-124c0-38.778,12.105-74.729,32.744-104.279"/>
+                                    <path opacity="0.47" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M112.667,209.667c0-24.224,8.879-46.373,23.561-63.372"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="60" stroke-linecap="round" stroke-miterlimit="10" d="M219.667,142
+                                        c9.111,0,17.855,1.569,25.979,4.451c30.119,10.687,51.688,39.432,51.688,73.216c0,26.809-13.583,50.445-34.242,64.402"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="35" stroke-linecap="round" stroke-miterlimit="10" d="M402.049,219.667
+                                        c0,1.749-0.024,3.492-0.073,5.229c-0.433,15.352-2.763,30.228-6.763,44.404"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="33" stroke-linecap="round" stroke-miterlimit="10" d="M219.667,36.667
+                                        c17.454,0,34.337,2.443,50.326,7.007c18.544,5.293,35.886,13.438,51.52,23.93"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M364.939,89.508c16.146,18.009,29.188,39.345,37.968,63.464c21.42,58.851,12.738,121.317-18.179,170.538"/>
+                                    <path opacity="0.51" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M302.872,57.424c39.501,20.246,71.754,54.88,88.133,99.88c13.263,36.439,14.183,74.363,4.896,109.19"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="28" stroke-linecap="round" stroke-miterlimit="10" d="M361.714,338.752
+                                        c-31.898,38.807-79.065,64.587-132.316,68.154c-4.208,0.282-8.453,0.426-12.731,0.426"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="58" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M327.892,280.236c-21.229,37.852-61.739,63.431-108.226,63.431c-31.532,0-60.315-11.77-82.196-31.155"/>
+                                </g>
+                            </svg>
+                        </span>
+                    </a></li>
+              </ul>
+            </nav>
+
+            <div class="mobile-nav">
+                <h1 class="homepage-title">micro:bit worldtour<label for="mobile-menu-toggle"><span class="hidden">menu</span></label></h1>
+                <input type="checkbox" id="mobile-menu-toggle">
+                <ul class="mobile-menu">
+                    <li><a href="/microbit/mary.html" id="mary" class="mary"><div class="microbit mary"></div><span>Mary</span></a></li>
+                    <li><a href="/microbit/meena.html" id="meena" class="meena"><div class="microbit meena"></div><span>Meena</span></a></li>
+                    <li><a href="/microbit/meixiu.html" id="meixiu" class="meixiu"><div class="microbit meixiu"></div><span>Mei Xiu</span></a></li>
+                    <li><a href="/microbit/mohandas.html" id="mohandas" class="mohandas"><div class="microbit mohandas"></div><span>Mohandas</span></a></li>
+                    <li><a href="/microbit/monifa.html" id="monifa" class="monifa"><div class="microbit monifa"></div><span>Monifa</span></a></li>
+                    <li> <a href="/microbit/mahiri.html" id="mahiri" class="mahari"><div class="microbit dead"></div><span>Mahari</span></a></li>
+                </ul>
+            </div>
         </header>
-        <div class="content">
-        <h1>Monifa micro:bit</h1>
+        <div class="page-content">
+            <h1 class="page-title">Monifa micro:bit</h1>
+            <div id="map" class="fragment"></div>
+            <div class="content">
+                <!-- ADD NEW ENTRIES HERE -->
+                <!-- OLDER ENTRIES GO AT THE BOTTOM -->
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars0.githubusercontent.com/u/1440077?v=3&s=73" alt="A picture of Angus" />
+                        <p>
+                            <span class="name">Angus Thomas</span>
+                            <span class="location">Horsham, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Saturday, 12th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+    		<p>When Monifa arrived, I started off reading Nicholas Tollervey's informative account of how MicroPython came to be implemented on the micro:bit, then I set about getting the tools on place on Fedora to build the MicroPython image for the micro:bit's ARM processor. The source, and a README, are <a href="https://github.com/bbcmicrobit/micropython">here</a>.</p>
+    		<p>On x86-64 Fedora 23, I needed to install the following RPMs:</p>
+    		<pre>cmake ninja-build srecord gcc ninja-build libffi-devel redhat-rpm-config openssl-devel picocom pyserial</pre>
+    		<p>When it came to cross-compiling the actual image, I downloaded the gcc-arm-linux-gnu tarball from <a href="https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q3-update/+download/gcc-arm-none-eabi-4_9-2015q3-20150921-linux.tar.bz2">here</a>.</p>
+    		<p>Fedora does come with a version of gcc for ARM, the gcc-arm-linux-gnu RPM. That may well support building binaries for the micro:bit, but I didn't persevere long in trying to make it work before deciding to use the version of gcc from the tarball. </p>
+    <p>The other required package which isn't available for Fedora is Yotta. To get that. I installed the python-virtualenv and python-pip RPMs, set up a vrtual env, and then used pip to install Yotta. </p>
+    		<p>Updating Yotta requires access to a private repo, as described <a href="https://github.com/lancaster-university/microbit">here</a>. Joe Finney replied almost immediately to my request for access, so I should be able to continue with this.</p>
+    		<p>With that, I was able to compile the micropython image. Nautilus supports transferring the image to the device by dragging and dropping, which was nice and uncomplicated. </p>
+    		<p>With that image booted on the micro:bit, I was able to ge to the interactive python shell using:</p>
+    		<pre>picocom /dev/ttyACM0 -b 115200</pre>
+    		<p>Next thing was to make some images with different programs linked into them. I downloaded <a href="http://www.stuffaboutcode.com/2015/11/snake-on-microbit-using-micropython.html">Martin O'Hanlon's snake code</a>, and linked that to the original micropython image:</p>
+    		<pre>./tools/makecombinedhex.py -o snake.hex build/bbc-microbit-classic-gcc-nosd/source/microbit-micropython.hex snake.py</pre>
+    		<p>Radomir generously send his micro:bob robot (described in his posts below) along with Monifa, so I grabbed <a href="https://bitbucket.org/thesheep/micro-bob/src">his code</a>, and made an image with that linked into it. Radomir told me the two key pieces of information required to work the robot: It needs a 3.7 volt LiPo battery, and, when it comes to connecting the battery, "Plus is on the lower pin, and minus on the higher (outermost) pin of the PCB."</p>
+    		</p>With all that, I was ready to head to the weekly code club at my local primary school and let the children try out the micro:bit. They had a lot of fun, using the interactive shell to their names on the LEDs, then playing Snake, then we wrote a very simple voting program: </p>
+
+    		<pre>
+    from microbit import *
+
+    display.clear()
+
+    while True:
+        if button_a.is_pressed() and button_b.is_pressed():
+            display.show(Image.HEART)
+            sleep(1000)
+            display.clear()
+            break
+        elif button_a.is_pressed():
+            display.show(Image.YES)
+        elif button_b.is_pressed():
+            display.show(Image.NO)
+        sleep(100)
+
+    		</pre>
+
+    		<p>They enjoyed holding up the micro:bit to display their opinion on all kinds of questions. </p>
+    		<p>Radomir's walking robot was the main attraction. As well as, you know, <b>AN ACTUAL WALKING ROBOT</b>, they were interested in the code, which is more complex than what they're used to, but they were able to understand when they took it in stages. </p>
+    		<p>I'll post some updates to the docs at <a href="http://microbit-micropython.readthedocs.org/en/latest/">microbit-micropython.readthedocs.org/en/latest/</a> with details on using Fedora. </p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                        <p>
+                            <span class="name">Radomir Dopieralski</span>
+                            <span class="location">Z&uuml;rich, CH.</span>
+                        </p>
+                        <p>
+                            <span class="date">Monday, 30th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>After yesterday's failure I couldn't sleep. Monifa
+                        was already packed up, ready to be sent to the next
+                        person in the morning, and I spent the night reading
+                        the I2C specification and Atmel's notes on TWI on AVR.</p>
+                        <p>In the morning, after reading all the helpful messages
+                        on the issue that I reported, I decided to quickly give
+                        it one more try, as I got one idea that might possibly work.
+                        It turns out, that the address of the I2C device can be
+                        specified in two formats. I used the more common 7 bit
+                        format, but there is also the 8 bit format. Sure enough,
+                        micro:bit uses the latter format, and when I shifted by
+                        I2C address to the left one bit, everything suddenly worked.</p>
+                        <p>Don't worry, this will be fixed soon, and micro:bit
+                        will be using the more popular 7 bit format, just like
+                        Arduino and Raspberry Pi do.</p>
+                        <p>But that was just the beginning of the work. I could
+                        move the individual servos of the robot, but I wanted it
+                        to walk. So I wrote a quick e-mail to the person who was
+                        supposed to get Monifa after me, apologizing for the delay,
+                        and worked on it some more in the evening.</p>
+                        <p>I will spare you the tale of the frustrating hours of
+                        tuning the positions and getting the inverse kinematics
+                        calculations right. I have done it many times before, but
+                        somehow it haven't become easier. Finally, I could control
+                        the position of each leg individually and of all of them
+                        at once:<p>
+                        <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VZ7vxIEno0o" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>But the work is not finished yet. Next comes programming
+                        the actual walking. I decided to start with the creep gait,
+                        which is statically stable and slow -- perfect for testing.
+                        I wrote all the code that was supposed to move the robot,
+                        and got a <i>MemoryError</i>. The poor Monifa simply couldn't
+                        remember all the things I made it do. Sigh. I went over
+                        all the code and optimized what I could. Finally, after
+                        squashing some additional bugs that crept in there, my
+                        code kinda worked when run from the Python console. So I
+                        added a few lines to make it run by default, so that I
+                        could unplug the robot from the computer and make it
+                        walk on its own. And I got a <i>RuntimeError: maximum
+                        recursion depth exceeded.</i> So I went over the code
+                        again, flattening what I could and inlining functions
+                        and methods. Finally, I got it to walk:</p>
+                        <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SMqX_yPnfVI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>I know, it looks very sick and weak. That's probably
+                        how it feels too. It was a quick hack, and there is a
+                        lot I had to remove or simplify. I'm also sure that a
+                        lot could be improved. But I got it done and the next
+                        person is waiting, so Monifa goes on its way today.</p>
+                        <p>In case you want to look at the code, <a href="https://bitbucket.org/thesheep/micro-tote">it's in this repository.</a></p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                        <p>
+                            <span class="name">Radomir Dopieralski</span>
+                            <span class="location">Z&uuml;rich, CH.</span>
+                        </p>
+                        <p>
+                            <span class="date">Sunday, 29th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I finally found some time to work on connecting the
+                        micro:bit to my super-cheap quadruped robot, <a
+                            href="http://tote.rtfd.org">Tote</a>.</p> <p>Since I
+                        need to control a dozen servomechanisms here, I decided
+                        that it's best to not connect them directly to micro:bit
+                        pins (it seems that the current build of Micropython can
+                        only do PWM output on the analog pins, and there are only
+                        six of those), but instead to program the Arduino that
+                        normally controls them to listen over I2C connection, and
+                        move the servos to the positions that it gets from there.
+                        <a href="https://bitbucket.org/thesheep/tote/src/tip/i2cslave/"
+                        >I already had the code for that</a>, because that's how I
+                        plan to connect a Raspberry Pi to it later on.<p>
+                        <p>So uploaded the firmware to the robot, and connected the
+                        I2C lines to the micro:bit:</p>
+                        <p><img class="figure" src="../photo/IMG_20151129_114407.jpg"></p>
+                        <p>Then I connected the micro:bit to USB and tried those
+                        commands:</p>
+                        <pre class="prettyprint">
+    import ustruct
+    import math
+    from microbit import i2c
+
+    i2c.write(0x04, ustruct.pack('bf', 0, math.radians(45)))
+                        </pre>
+                        <p>This should have moved the tip of the font left leg by
+                        45° forward. But nothing happened. Not even an error.</p>
+                        <p>Surprised, I tried the same thing with a Raspberry Pi:</p>
+                        <p><img class="figure" src="../photo/IMG_20151129_123810.jpg"></p>
+                        <p>This time it worked correctly. It seems that there are
+                        still some problems in the I2C support on the
+                        micro:bit. Unfortunately, this means I will not be able to
+                        control my robot with it just yet. I have to send Monifa
+                        on its way to the next person on the list, so I guess the
+                        next opportunity I will have to try it is when micro:bit
+                        is released to the general public, provided I will be able
+                        to buy one.</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                        <p>
+                            <span class="name">Radomir Dopieralski</span>
+                            <span class="location">Z&uuml;rich, CH.</span>
+                        </p>
+                        <p>
+                            <span class="date">Wednesday, 26th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>Today was a programming day. I sat down and wrote the
+                        code that controls both <b>micro:bot</b> and <b>micro:bob</b>.
+                        The <b>micro:bob</b> is quite simple &mdash; it only has
+                        a preprogrammed sequence of leg movements for walking.
+                        I made a <code>Servo</code> class for convenience, and
+                        then some functions for making a step with left and right
+                        legs. I also added some faces. I should probably also add
+                        some turning and maybe a small dance, but I was pressed for
+                        time, so I left that for some other time. For now, behold,
+                        <b>micro:bob</b> walking:</p>
+                        <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/khRb_HOsX6c" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>The small shaking at the beginning is there to work
+                        around a bug with the PWM signal. Hopefully this will get
+                        fixed and won't be needed anymore.</p>
+                        <p>You can also see that the robot twitches a little when
+                        it's just standing still. That's another bug in the PWM.</p>
+                        <p>All the code is available in the <a href="https://bitbucket.org/thesheep/micro-bob/src">micro:bob
+                        repository</a>.</p>
+                        <p>Next comes the <b>micro:bot</b>. I already had it riding
+                        across my room, but now it's time to add some intelligence.
+                        I started by checking how fast it goes straight and rotates,
+                        so that I could use proper timing for the commands that make
+                        it go a specified distance and turn a specified angle. Having
+                        done that, I proceeded to calibrate the distance sensor it
+                        has mounted at the front (just a simple SHARP sensor from
+                        Pololu, but note that it has to run on 3V). Then I coded
+                        a simple obstacle avoidance procedure: if the distance
+                        sensor shows an obstacle less than about 10cm ahead, then
+                        stop, turn 20° to the left, check the distance, turn back
+                        and 20° the right, check distance, turn back, compare the
+                        two distances and turn 60° in the direction that has more
+                        free space. It works surprisingly well, as long as the
+                        robot doesn't hit something that it didn't see:</p>
+                        <div class="video-container">
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/0ddh4n7rcWk" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>The code is in the <a href="https://bitbucket.org/thesheep/micro-bob/src">micro:bot repository</a>.</p>
+                        <p>All in all, it was quite fun to use the <b>micro:bit</b> and I hope the kids will have fun too.</p>
+                        <p>As the last thing, I will try to make it control <a href="http://tote.rtfd.org">Tote</a>, a quadruped robot that I'm developing.</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                        <p>
+                            <span class="name">Radomir Dopieralski</span>
+                            <span class="location">Z&uuml;rich, CH.</span>
+                        </p>
+                        <p>
+                            <span class="date">Wednesday, 25th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I didn't really have much time to properly program
+                        the <b>micro:bot</b> (that's what I decided to call it), but
+                        I did construct a brother for it, <b>micro:bob</b>.</p>
+                        <p><img class="figure" src="../photo/IMG_20151126_134204.jpg"></p>
+                        <p>This one is a walking robot based on the popular Bob
+                        design. It has four servos, but two of them are connected
+                        to the same signal pin, so I can control it with just the
+                        three pins that are available as large pads. I didn't have
+                        another small breadboard, so instead I used a servo
+                        breakout board that I had lying around. A veroboard would
+                        work as well. The rest is just some pieces of soft plastic
+                        and a lot of hot glue.</p>
+                        <p>Tomorrow I will try to program both robots to do
+                        something interesting.</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
+                        <p>
+                            <span class="name">Radomir Dopieralski</span>
+                            <span class="location">Z&uuml;rich, CH.</span>
+                        </p>
+                        <p>
+                            <span class="date">Tuesday, 24th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I received Monifa, and put it on the robot in Mahiri's
+                        place. Then I tried to get the robot going, but ran into
+                        some problems with the PWM signal from the <b>micro:bit</b>.</p>
+                        <p>It turned out to be two separate problems. One is that
+                        setting the PWM period doesn't seem to work reliably at the
+                        moment. I actually went to my local hackerspace and used
+                        their osciloscope to look at the signal:</p>
+                        <p><img class="figure" src="../photo/IMG_20151124_203956.jpg"></p>
+                        <p>Hopefully that will be fixed before it's shipped.</p>
+                        <p>The other problem was powering the servos with 3V from
+                        the two AAA batteries that I have used. Turns out that servos
+                        rated for 4.6V don't really like that. I replaced the batteries
+                        with a 3.7V LiPo battery, and now it works much better.</p>
+                        <p><img class="figure" src="../photo/IMG_20151125_105637s.jpg"></p>
+                        <p>I also figured out how to append the Python script at the end
+                        of the hex file with the firmware. Turns out that after you run
+                        it through the "hexlify.py" script and append at the end, you
+                        still need to find and move the "end of file" line, which looks like this:</p>
+                        <pre>:00000001FF</pre>
+                        <p>Then just drag-and-drop the file into <b>micro:bit</b>, and the robot
+                        can go on its own:</p>
+
+                        <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iVpkl9NlzB0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>Now I just need to make it use that sensor (and maybe the compass too?).</p>
+                        <p>By the way, I also got an edge connector, to get to all the other pins on this board. After some assembly, it looks like this:</p>
+                        <p><img class="figure" src="../photo/IMG_20151124_154459.jpg"></p>
+                        <p>I like how they added the three rows of pins at the
+                        bottom, for easily connecting your own stuff. But I hate
+                        that they got the order of the two power rows wrong. It
+                        should be ground-power-signal, from the top, not
+                        power-ground-signal. This way you cannot connect RC hobby
+                        servos to this or other common sensors (ground-power-signal
+                        is a kind of a standard). Oh well.</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
+                        <p>
+                            <span class="name">Nicholas Tollervey</span>
+                            <span class="location">Towcester, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Thursday, 19th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>Radomir killed poor old
+                        <a href="/microbit/mahiri.html">Mahiri</a> so welcome to
+                        the world Monifa micro:bit.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="map" class="fragment"></div>
-        <div class="content">
-            <!-- ADD NEW ENTRIES HERE -->
-            <!-- OLDER ENTRIES GO AT THE BOTTOM -->
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars0.githubusercontent.com/u/1440077?v=3&s=73" alt="A picture of Angus" />
-                    <p>
-                        <span class="name">Angus Thomas</span>
-                        <span class="location">Horsham, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Saturday, 12th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-		<p>When Monifa arrived, I started off reading Nicholas Tollervey's informative account of how MicroPython came to be implemented on the micro:bit, then I set about getting the tools on place on Fedora to build the MicroPython image for the micro:bit's ARM processor. The source, and a README, are <a href="https://github.com/bbcmicrobit/micropython">here</a>.</p>
-		<p>On x86-64 Fedora 23, I needed to install the following RPMs:</p>
-		<pre>cmake ninja-build srecord gcc ninja-build libffi-devel redhat-rpm-config openssl-devel picocom pyserial</pre>
-		<p>When it came to cross-compiling the actual image, I downloaded the gcc-arm-linux-gnu tarball from <a href="https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q3-update/+download/gcc-arm-none-eabi-4_9-2015q3-20150921-linux.tar.bz2">here</a>.</p>
-		<p>Fedora does come with a version of gcc for ARM, the gcc-arm-linux-gnu RPM. That may well support building binaries for the micro:bit, but I didn't persevere long in trying to make it work before deciding to use the version of gcc from the tarball. </p>
-<p>The other required package which isn't available for Fedora is Yotta. To get that. I installed the python-virtualenv and python-pip RPMs, set up a vrtual env, and then used pip to install Yotta. </p>
-		<p>Updating Yotta requires access to a private repo, as described <a href="https://github.com/lancaster-university/microbit">here</a>. Joe Finney replied almost immediately to my request for access, so I should be able to continue with this.</p>
-		<p>With that, I was able to compile the micropython image. Nautilus supports transferring the image to the device by dragging and dropping, which was nice and uncomplicated. </p>
-		<p>With that image booted on the micro:bit, I was able to ge to the interactive python shell using:</p>
-		<pre>picocom /dev/ttyACM0 -b 115200</pre>
-		<p>Next thing was to make some images with different programs linked into them. I downloaded <a href="http://www.stuffaboutcode.com/2015/11/snake-on-microbit-using-micropython.html">Martin O'Hanlon's snake code</a>, and linked that to the original micropython image:</p>
-		<pre>./tools/makecombinedhex.py -o snake.hex build/bbc-microbit-classic-gcc-nosd/source/microbit-micropython.hex snake.py</pre>
-		<p>Radomir generously send his micro:bob robot (described in his posts below) along with Monifa, so I grabbed <a href="https://bitbucket.org/thesheep/micro-bob/src">his code</a>, and made an image with that linked into it. Radomir told me the two key pieces of information required to work the robot: It needs a 3.7 volt LiPo battery, and, when it comes to connecting the battery, "Plus is on the lower pin, and minus on the higher (outermost) pin of the PCB."</p>
-		</p>With all that, I was ready to head to the weekly code club at my local primary school and let the children try out the micro:bit. They had a lot of fun, using the interactive shell to their names on the LEDs, then playing Snake, then we wrote a very simple voting program: </p>
-
-		<pre>
-from microbit import *
-
-display.clear()
-
-while True:
-    if button_a.is_pressed() and button_b.is_pressed():
-        display.show(Image.HEART)
-        sleep(1000)
-        display.clear()
-        break
-    elif button_a.is_pressed():
-        display.show(Image.YES)
-    elif button_b.is_pressed():
-        display.show(Image.NO)
-    sleep(100)
-
-		</pre>
-
-		<p>They enjoyed holding up the micro:bit to display their opinion on all kinds of questions. </p>
-		<p>Radomir's walking robot was the main attraction. As well as, you know, <b>AN ACTUAL WALKING ROBOT</b>, they were interested in the code, which is more complex than what they're used to, but they were able to understand when they took it in stages. </p>
-		<p>I'll post some updates to the docs at <a href="http://microbit-micropython.readthedocs.org/en/latest/">microbit-micropython.readthedocs.org/en/latest/</a> with details on using Fedora. </p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
-                    <p>
-                        <span class="name">Radomir Dopieralski</span>
-                        <span class="location">Z&uuml;rich, CH.</span>
-                    </p>
-                    <p>
-                        <span class="date">Monday, 30th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>After yesterday's failure I couldn't sleep. Monifa
-                    was already packed up, ready to be sent to the next
-                    person in the morning, and I spent the night reading
-                    the I2C specification and Atmel's notes on TWI on AVR.</p>
-                    <p>In the morning, after reading all the helpful messages
-                    on the issue that I reported, I decided to quickly give
-                    it one more try, as I got one idea that might possibly work.
-                    It turns out, that the address of the I2C device can be
-                    specified in two formats. I used the more common 7 bit
-                    format, but there is also the 8 bit format. Sure enough,
-                    micro:bit uses the latter format, and when I shifted by
-                    I2C address to the left one bit, everything suddenly worked.</p>
-                    <p>Don't worry, this will be fixed soon, and micro:bit
-                    will be using the more popular 7 bit format, just like
-                    Arduino and Raspberry Pi do.</p>
-                    <p>But that was just the beginning of the work. I could
-                    move the individual servos of the robot, but I wanted it
-                    to walk. So I wrote a quick e-mail to the person who was
-                    supposed to get Monifa after me, apologizing for the delay,
-                    and worked on it some more in the evening.</p>
-                    <p>I will spare you the tale of the frustrating hours of
-                    tuning the positions and getting the inverse kinematics
-                    calculations right. I have done it many times before, but
-                    somehow it haven't become easier. Finally, I could control
-                    the position of each leg individually and of all of them
-                    at once:<p>
-                    <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VZ7vxIEno0o" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>But the work is not finished yet. Next comes programming
-                    the actual walking. I decided to start with the creep gait,
-                    which is statically stable and slow -- perfect for testing.
-                    I wrote all the code that was supposed to move the robot,
-                    and got a <i>MemoryError</i>. The poor Monifa simply couldn't
-                    remember all the things I made it do. Sigh. I went over
-                    all the code and optimized what I could. Finally, after
-                    squashing some additional bugs that crept in there, my
-                    code kinda worked when run from the Python console. So I
-                    added a few lines to make it run by default, so that I
-                    could unplug the robot from the computer and make it
-                    walk on its own. And I got a <i>RuntimeError: maximum
-                    recursion depth exceeded.</i> So I went over the code
-                    again, flattening what I could and inlining functions
-                    and methods. Finally, I got it to walk:</p>
-                    <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SMqX_yPnfVI" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>I know, it looks very sick and weak. That's probably
-                    how it feels too. It was a quick hack, and there is a
-                    lot I had to remove or simplify. I'm also sure that a
-                    lot could be improved. But I got it done and the next
-                    person is waiting, so Monifa goes on its way today.</p>
-                    <p>In case you want to look at the code, <a href="https://bitbucket.org/thesheep/micro-tote">it's in this repository.</a></p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
-                    <p>
-                        <span class="name">Radomir Dopieralski</span>
-                        <span class="location">Z&uuml;rich, CH.</span>
-                    </p>
-                    <p>
-                        <span class="date">Sunday, 29th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I finally found some time to work on connecting the
-                    micro:bit to my super-cheap quadruped robot, <a
-                        href="http://tote.rtfd.org">Tote</a>.</p> <p>Since I
-                    need to control a dozen servomechanisms here, I decided
-                    that it's best to not connect them directly to micro:bit
-                    pins (it seems that the current build of Micropython can
-                    only do PWM output on the analog pins, and there are only
-                    six of those), but instead to program the Arduino that
-                    normally controls them to listen over I2C connection, and
-                    move the servos to the positions that it gets from there.
-                    <a href="https://bitbucket.org/thesheep/tote/src/tip/i2cslave/"
-                    >I already had the code for that</a>, because that's how I
-                    plan to connect a Raspberry Pi to it later on.<p>
-                    <p>So uploaded the firmware to the robot, and connected the
-                    I2C lines to the micro:bit:</p>
-                    <p><img class="figure" src="../photo/IMG_20151129_114407.jpg"></p>
-                    <p>Then I connected the micro:bit to USB and tried those
-                    commands:</p>
-                    <pre class="prettyprint">
-import ustruct
-import math
-from microbit import i2c
-
-i2c.write(0x04, ustruct.pack('bf', 0, math.radians(45)))
-                    </pre>
-                    <p>This should have moved the tip of the font left leg by
-                    45° forward. But nothing happened. Not even an error.</p>
-                    <p>Surprised, I tried the same thing with a Raspberry Pi:</p>
-                    <p><img class="figure" src="../photo/IMG_20151129_123810.jpg"></p>
-                    <p>This time it worked correctly. It seems that there are
-                    still some problems in the I2C support on the
-                    micro:bit. Unfortunately, this means I will not be able to
-                    control my robot with it just yet. I have to send Monifa
-                    on its way to the next person on the list, so I guess the
-                    next opportunity I will have to try it is when micro:bit
-                    is released to the general public, provided I will be able
-                    to buy one.</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
-                    <p>
-                        <span class="name">Radomir Dopieralski</span>
-                        <span class="location">Z&uuml;rich, CH.</span>
-                    </p>
-                    <p>
-                        <span class="date">Wednesday, 26th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>Today was a programming day. I sat down and wrote the
-                    code that controls both <b>micro:bot</b> and <b>micro:bob</b>.
-                    The <b>micro:bob</b> is quite simple &mdash; it only has
-                    a preprogrammed sequence of leg movements for walking.
-                    I made a <code>Servo</code> class for convenience, and
-                    then some functions for making a step with left and right
-                    legs. I also added some faces. I should probably also add
-                    some turning and maybe a small dance, but I was pressed for
-                    time, so I left that for some other time. For now, behold,
-                    <b>micro:bob</b> walking:</p>
-                    <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/khRb_HOsX6c" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>The small shaking at the beginning is there to work
-                    around a bug with the PWM signal. Hopefully this will get
-                    fixed and won't be needed anymore.</p>
-                    <p>You can also see that the robot twitches a little when
-                    it's just standing still. That's another bug in the PWM.</p>
-                    <p>All the code is available in the <a href="https://bitbucket.org/thesheep/micro-bob/src">micro:bob
-                    repository</a>.</p>
-                    <p>Next comes the <b>micro:bot</b>. I already had it riding
-                    across my room, but now it's time to add some intelligence.
-                    I started by checking how fast it goes straight and rotates,
-                    so that I could use proper timing for the commands that make
-                    it go a specified distance and turn a specified angle. Having
-                    done that, I proceeded to calibrate the distance sensor it
-                    has mounted at the front (just a simple SHARP sensor from
-                    Pololu, but note that it has to run on 3V). Then I coded
-                    a simple obstacle avoidance procedure: if the distance
-                    sensor shows an obstacle less than about 10cm ahead, then
-                    stop, turn 20° to the left, check the distance, turn back
-                    and 20° the right, check distance, turn back, compare the
-                    two distances and turn 60° in the direction that has more
-                    free space. It works surprisingly well, as long as the
-                    robot doesn't hit something that it didn't see:</p>
-                    <div class="video-container">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/0ddh4n7rcWk" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>The code is in the <a href="https://bitbucket.org/thesheep/micro-bob/src">micro:bot repository</a>.</p>
-                    <p>All in all, it was quite fun to use the <b>micro:bit</b> and I hope the kids will have fun too.</p>
-                    <p>As the last thing, I will try to make it control <a href="http://tote.rtfd.org">Tote</a>, a quadruped robot that I'm developing.</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
-                    <p>
-                        <span class="name">Radomir Dopieralski</span>
-                        <span class="location">Z&uuml;rich, CH.</span>
-                    </p>
-                    <p>
-                        <span class="date">Wednesday, 25th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I didn't really have much time to properly program
-                    the <b>micro:bot</b> (that's what I decided to call it), but
-                    I did construct a brother for it, <b>micro:bob</b>.</p>
-                    <p><img class="figure" src="../photo/IMG_20151126_134204.jpg"></p>
-                    <p>This one is a walking robot based on the popular Bob
-                    design. It has four servos, but two of them are connected
-                    to the same signal pin, so I can control it with just the
-                    three pins that are available as large pads. I didn't have
-                    another small breadboard, so instead I used a servo
-                    breakout board that I had lying around. A veroboard would
-                    work as well. The rest is just some pieces of soft plastic
-                    and a lot of hot glue.</p>
-                    <p>Tomorrow I will try to program both robots to do
-                    something interesting.</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/1181357?v=3&s=73" alt="A picture of Radomir" />
-                    <p>
-                        <span class="name">Radomir Dopieralski</span>
-                        <span class="location">Z&uuml;rich, CH.</span>
-                    </p>
-                    <p>
-                        <span class="date">Tuesday, 24th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I received Monifa, and put it on the robot in Mahiri's
-                    place. Then I tried to get the robot going, but ran into
-                    some problems with the PWM signal from the <b>micro:bit</b>.</p>
-                    <p>It turned out to be two separate problems. One is that
-                    setting the PWM period doesn't seem to work reliably at the
-                    moment. I actually went to my local hackerspace and used
-                    their osciloscope to look at the signal:</p>
-                    <p><img class="figure" src="../photo/IMG_20151124_203956.jpg"></p>
-                    <p>Hopefully that will be fixed before it's shipped.</p>
-                    <p>The other problem was powering the servos with 3V from
-                    the two AAA batteries that I have used. Turns out that servos
-                    rated for 4.6V don't really like that. I replaced the batteries
-                    with a 3.7V LiPo battery, and now it works much better.</p>
-                    <p><img class="figure" src="../photo/IMG_20151125_105637s.jpg"></p>
-                    <p>I also figured out how to append the Python script at the end
-                    of the hex file with the firmware. Turns out that after you run
-                    it through the "hexlify.py" script and append at the end, you
-                    still need to find and move the "end of file" line, which looks like this:</p>
-                    <pre>:00000001FF</pre>
-                    <p>Then just drag-and-drop the file into <b>micro:bit</b>, and the robot
-                    can go on its own:</p>
-
-                    <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iVpkl9NlzB0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>Now I just need to make it use that sensor (and maybe the compass too?).</p>
-                    <p>By the way, I also got an edge connector, to get to all the other pins on this board. After some assembly, it looks like this:</p>
-                    <p><img class="figure" src="../photo/IMG_20151124_154459.jpg"></p>
-                    <p>I like how they added the three rows of pins at the
-                    bottom, for easily connecting your own stuff. But I hate
-                    that they got the order of the two power rows wrong. It
-                    should be ground-power-signal, from the top, not
-                    power-ground-signal. This way you cannot connect RC hobby
-                    servos to this or other common sensors (ground-power-signal
-                    is a kind of a standard). Oh well.</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
-                    <p>
-                        <span class="name">Nicholas Tollervey</span>
-                        <span class="location">Towcester, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Thursday, 19th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>Radomir killed poor old
-                    <a href="/microbit/mahiri.html">Mahiri</a> so welcome to
-                    the world Monifa micro:bit.</p>
-                </div>
-            </div>
+        <div class="footer">
+            <h1>micro:bit worldtour</h1>
+            <span class="microbit"></span>
         </div>
         <script src="/js/microworldtour.js"></script>
         <script src="monifa.js"></script>
