@@ -6,7 +6,7 @@
 @mahiri:  black;
 
 @charcoal: #3f3f3f;
-@space: #312d46;
+@space: #1D1D37;
 @sea: #33CDD4;
 @land: #4FBD37;
 @cloud: #BED1D4;
@@ -375,7 +375,8 @@ label[for="mobile-menu-toggle"]{
   text-align: center;
   font-size: 3em;
   position: relative;
-  z-index: 200;
+  z-index: 20000;
+  body.homepage & { z-index: 200; }
   span:nth-of-type(1) { width: calc(50% ~"-" 2.25em); display: inline-block; text-align: right;}
   span:nth-of-type(3) { width: calc(50% ~"-" 2.25em); display: inline-block; text-align: left;}
   .microbit {
