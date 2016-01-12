@@ -31,6 +31,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a { color: #2fa6c8; }
+
 @keyframes rotateElement {
   0% {transform: translate(0, 0);}
   100% {transform: translate(-10em, 0);}
@@ -79,9 +81,13 @@ body {
   margin-top: -100vh;
   width: 200vw;
   height: auto;
-  animation: orbit 80s linear infinite;
+  animation: none;
   transform-origin: center center;
+  transition: all 0.3s ease;
+  animation: orbit 80s linear infinite;
+  animation-play-state: paused;
   @media all and (max-width: @lrg) { display: none; }
+  header:hover & { animation-play-state: running; transition: all 0.3s ease; }
 }
 
 .microbit {
@@ -178,18 +184,21 @@ body {
   transform-origin: center center;
   -moz-transform-origin: center center;
   animation: orbit 15s linear infinite;
+  animation-play-state: paused;
   svg { width: 100%; }
   nav & {
     min-width: auto;
     min-height: auto;
     position: absolute !important;
   }
+  header:hover & { animation-play-state: running; }
 }
 
 .shadow {
   position: absolute;
   width: 100%;
   left: 0;
+  margin-top: -4px;
   text-align: center;
   &:after {
     content: "";
@@ -374,6 +383,7 @@ label[for="mobile-menu-toggle"]{
       margin: 0 20/@em;
       top: 1em;
   }
+  a { color: white; text-shadow: 0 0.1em 0.2em rgba(0,0,0,0.3); }
   body.homepage & { .microbit { animation: boing 0.5s ease-out infinite alternate; } }
 }
 
@@ -392,6 +402,7 @@ label[for="mobile-menu-toggle"]{
     display: block;
     margin: auto;
   }
+  a { color: white; }
 }
 
 
