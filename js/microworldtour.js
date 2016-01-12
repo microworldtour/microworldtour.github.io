@@ -52,5 +52,5 @@ function addRoute(journey, colour) {
         ])
         if((arrowOffset+=0.5) > 100)
             arrowOffset = 0;
-    }, 20);
+    }, 50);
 }
