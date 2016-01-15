@@ -7,380 +7,436 @@
         <link rel="shortcut icon" href="/img/microicon.png" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/leaflet.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500italic' rel='stylesheet' type='text/css'>
         <script src="/js/leaflet.js"></script>
         <script src="/js/leaflet.polylineDecorator.min.js"></script>
     </head>
-    <body>
+    <body class="meixiu">
         <header>
-            <a href="/">Home</a> |
-            <a href="/about.html">About</a> |
-            <a href="/microbit/mary.html" id="mary">Mary</a> |
-            <a href="/microbit/meena.html" id="meena">Meena</a> |
-            <a href="/microbit/mahiri.html" id="mahiri">Mahiri</a> |
-            <a href="/microbit/meixiu.html" id="meixiu">Mei-Xiu</a> |
-            <a href="/microbit/mohandas.html" id="mohandas">Mohandas</a> |
-            <a href="/microbit/monifa.html" id="monifa">Monifa</a>
-        </header>
-        <div class="content">
-        <h1>Mei-Xiu micro:bit</h1>
-        </div>
-        <div id="map" class="fragment"></div>
-        <div class="content">
-            <!-- ADD NEW ENTRIES HERE -->
-            <!-- OLDER ENTRIES GO AT THE BOTTOM -->
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars3.githubusercontent.com/u/511547?v=3&u&s=140" alt="A picture of Eleni" />
-                    <p>
-                        <span class="name">Eleni Lixourioti</span>
-                        <span class="location">London, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Wednesday, 30st December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p><strong>Greek version</strong></p>
-                    <p>Καθώς δεν τα πηγαίνω γενικά πολύ καλά με την κηπουρική, πολλές φορές <b>δυσκολεύομαι
-                    να κρατήσω τα φυτά μου χαρούμενα</b>.</p>
-                    <p>Για να διευκολύνω λίγο τα πράγματα, έφτιαξα την παρακάτω λύση:</p>
-                    <p>&nbsp;</p>
-                    <p><strong>English version</strong></p>
-                    <p>I'm not much into gardening and I often struggle to <b>keep my indoor plants happy</b>.</p>
-                    <p>Here's what I came up with to make things a little easier:</p>
-                    <iframe src="//giphy.com/embed/26tPmvQGLAWMIOMr6?html5=true&playOnHover=true&hideSocial=true" width="480" height="271" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
-                    <p>Διάβασε την υπόλοιπη ανάρτηση (Read the post): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/9803/">Project #3: Plants have feelings too</a></p>
-                    <p>Πλήρης σειρα (Full blog series): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/">A week with Micro:bit</a></p>
-                    <p>Κώδικας (Code on github): <a href="https://github.com/Geekfish/microbit-week/blob/master/happy_plant.py">happy_plant.py</a></p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars3.githubusercontent.com/u/511547?v=3&u&s=140" alt="A picture of Eleni" />
-                    <p>
-                        <span class="name">Eleni Lixourioti</span>
-                        <span class="location">London, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Wednesday, 30st December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p><strong>Greek version</strong></p>
-                    <p>Τα Χριστούγεννα (τουλάχιστον για όσους ζουν στο Βόρειο ημισφαίριο) συχνά συνδέονται με το χιόνι.</p>
-                    <p>Σκέφτηκα λοιπόν να δημιουργήσω μερικές <b>χιονονυφάδες</b> στο microbit.</p>
-                    <p>Αυτό κατέληξε να γίνει μια μικρή άσκηση περιστροφής γωνίας έτσι ώστε να γεμίσουμε συμμετρικά τον υπόλοιπο πίνακα με leds.</p>
-                    <p>Τα αποτελέσματα... δε μοιάζουν και πολύ με νυφάδες ;)</p>
-                    <p>&nbsp;</p>
-                    <p><strong>English version</strong></p>
-                    <p>Since Christmas often means snow (at least for us living in the northern hemisphere)
-                        I thought to try to generate some <b>snowflakes</b> on the microbit.</p>
-                    <p>This is just a small exercise of rotating a corner to symmetrically fill the rest of the leds.
-                       Results might be... not very snowflake-like ;)</p>
-                    <iframe src="//giphy.com/embed/d2ZjJTBfZ2WMQuyI?html5=true&playOnHover=true&hideSocial=true" width="480" height="351" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
-                    <p>Διάβασε την υπόλοιπη ανάρτηση (Read the post): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/9803/">Project #2: Snowflakes (almost)</a></p>
-                    <p>Πλήρης σειρα (Full blog series): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/">A week with Micro:bit</a></p>
-                    <p>Κώδικας (Code on github): <a href="https://github.com/Geekfish/microbit-week/blob/master/snowflakes.py">snowflakes.py</a></p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars3.githubusercontent.com/u/511547?v=3&u&s=140" alt="A picture of Eleni" />
-                    <p>
-                        <span class="name">Eleni Lixourioti</span>
-                        <span class="location">London, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Wednesday, 30st December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p><strong>Greek version</strong></p>
-                    <p>Ταιριάζει για αρχή να ξεκινήσουμε με μια εφαρμογή που <b>ρίχνει ζάρια</b>!</p>
-                    <p>Δυνατότητες:</p>
-                    <ul>
-                        <li>Τα κουμπιά πρέπει να αλλάζουν μεταξύ των διαθέσημων ζαριών ενός στάνταρ σετ για RPG (d4, d6, d8, d10, d12, d20)</li>
-                        <li>Μόλις ο παίκτης επιλέξει το ζάρι που θέλει, πρέπει να μπορεί να το ρίξει κουνώντας το micro:bit.</li>
-                    </ul>
-                    <p>Δυσκολίες:</p>
-                    <ul>
-                        <li>Ανίχνευση της κίνησης "ριξήματος"</li>
-                        <li>Προσαρμογή ρυθμίσεων για βελτίωση της χρηστικότητας</li>
-                    </ul>
-                    <p>&nbsp;</p>
-                    <p><strong>English version</strong></p>
-                    <p>Obligatory <b>dice rolling</b> project to get us started!</p>
-                    <p>Features:</p>
-                    <ul>
-                        <li>The buttons should cycle through the various dice from a simple standard RPG poly set (d4, d6, d8, d10, d12, d20)</li>
-                        <li>Once a die is selected the player should be able to roll it by shaking the micro:bit.</li>
-                    </ul>
-                    <p>Challenges:</p>
-                    <ul>
-                        <li>Shake detection</li>
-                        <li>Calibration for usability</li>
-                    </ul>
-                    <iframe src="//giphy.com/embed/d2Z6C1b3VckTDHpe?html5=true&playOnHover=true&hideSocial=true" width="480" height="516" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
-                    <p>Διάβασε την υπόλοιπη ανάρτηση (Read the post): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/9776/">Project #1: Dice Roller</a></p>
-                    <p>Πλήρης σειρα (Full blog series): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/">A week with Micro:bit</a></p>
-                    <p>Κώδικας (Code on github): <a href="https://github.com/Geekfish/microbit-week/blob/master/dicer_roller.py">dice_roller.py</a></p>
-                </div>
-            </div>
-            <div class="entry">
-            	<div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars1.githubusercontent.com/u/5587863?v=3&s=140" alt="A picture of Stewart" />
-                    <p>
-                    <span class="name">Stewart Watkiss</span>
-                    <span class="location">Redditch, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Monday, 21st December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>The accelerometer on the micro:bit is a great way to control robots. The accelerometer is very easy to use in MicroPython, the main task is to squirt the data down the serial port (on the USB) and have it talk to the computer at the other end.</p>
-                    <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nAtEkyG7vys" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>More details: <a href="http://www.watkissonline.co.uk/wordpress/?p=7907">On controlling the Raspberry Pi robot</a> and <a href="http://www.watkissonline.co.uk/wordpress/?p=7906">how to communicate as a serial device between the micro:bit and a computer</a>.</p>
-                    <p>The code is on github: <a href="https://github.com/penguintutor/microbit-micropython"> MicroPython on the micro:bit</a></p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="entry">
-            	<div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars1.githubusercontent.com/u/5587863?v=3&s=140" alt="A picture of Stewart" />
-                    <p>
-                    <span class="name">Stewart Watkiss</span>
-                    <span class="location">Redditch, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Thursday, 17th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>One of the first things that you normally do when learning electronics is to light up an LED. It gives an immediate output and adds a bit of a wow factor as the student feels they've accomplished something. All well and good, but a little red LED is not that impressive. So I thought what about a bigger LED, what above a bright LED would that be a bit more impressive? What if they were mini-theatre lights bright enough to make an impact at your school disco!</p>
-                    <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3iHy7EKj0zY" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>More  details on my blog <a href="http://www.watkissonline.co.uk/wordpress/?p=7898">Disco lights controlled by a micro:bit running MicroPython</a>.</p>
-                </div>
-            </div>
-            <div class="entry">
-            	<div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars1.githubusercontent.com/u/5587863?v=3&s=140" alt="A picture of Stewart" />
-                    <p>
-                    <span class="name">Stewart Watkiss</span>
-                    <span class="location">Redditch, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Wednesday, 16th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I expect that some of the children that get the micro:bits will already own a Raspberry Pi. I therefore wanted to look at how easy it is to get started programming the micro:bit from a Raspberry Pi. I also wanted to use the easy to use upyed editor which runs within the Chrome browser (Chromium on the Raspberry Pi). It's not the most exciting program (Hello World), but provides a starting point for programming the micro:bit from the Raspberry Pi.</p>
-                    <p>I hope to look at interacting between the Raspberry Pi and micro:bit next.</p>
-                    <div class="video-container">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/te2fXgHvFxM?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>More  details on my blog <a href="http://www.watkissonline.co.uk/microbit">Programming the micro:bit using a Raspberry Pi 2</a>.</p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
-                    <p>
-                    <span class="name">Martin O'Hanlon</span>
-                    <span class="location">Wall Heath, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Wednesday, 9th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I decided to see if I could do something fun with the Microbit and David Whale (@whaleygeek) suggested 'can we use the microbit to control something in Minecraft', that sounded like a fun idea so I came up with a program which would allow me to fly an Xwing around Minecraft using the Microbit to control whether it went left or right and using the buttons to make it start and drop bombs.</p>
-                    <p>I am quite pleased with myself!</p>
-                    <div class="video-container">
-                    <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/59KqWVwj_Cc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/tree/master/examples/mcfly">here</a>.</p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
-                    <p>
-                    <span class="name">Martin O'Hanlon</span>
-                    <span class="location">Birmingham, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Monday, 7th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I was demoing a super cool project using the Microbit at Picademy (more on that later) we decided to see if we could get the Microbit working via a USB on-the-go connection and an Android phone. It worked a treat! Made a program using touchdevelop, downloaded the .hex and flashed it all using an Android phone. This can open up the Microbit to many young people who dont have regular access to a computer.</p>
-                    <p><img src="../photo/microbit-android.jpg" alt="picture of a microbit being programmed via an android phone." /></p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
-                    <p>
-                    <span class="name">Martin O'Hanlon</span>
-                    <span class="location">Wall Heath, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Monday, 30th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I wanted to have a go at using the MicroBit's accelerometer so I decided to make a Magic 8 Ball.</p>
-                    <div class="video-container">
-                    <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/b-8cRJiEKbo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>A blog post about creating the Magic 8 Ball is on <a href="http://www.stuffaboutcode.com/2015/11/microbit-magic-8-ball-with-micropython.html">stuffaboutcode</a>.</p>
-                    <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/blob/master/examples/8ball.py">here</a>.</p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
-                    <p>
-                    <span class="name">Martin O'Hanlon</span>
-                    <span class="location">Wall Heath, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Wednesday, 25th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>Flushed with my success of turning on an LED, the equivalent of 'Hello World', I thought I would see how far I could push MicroPython and the MicroBit and see if I could port a version of 'Snake' I created a while ago.  It turns out I could!</p>
-                    <div class="video-container">
-                    <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/R1DOIxkGSwg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/blob/master/examples/snakebit.py">here</a>.</p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
-                    <p>
-                    <span class="name">Martin O'Hanlon</span>
-                    <span class="location">Wall Heath, UK.</span>
-                    </p>
-                    <p>
-                    <span class="date">Wednesday, 25th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>Tom Viner gave me some great tips and got me started using ntolls <a href="https://github.com/ntoll/upyed">upyed</a> to create some code and also supplied me with his auto upload utility <a href="https://github.com/tomviner/upyflashed" target="_blank">upyflashed</a> get it onto the micropython.</p>
-                    <p>I started by making a simple class to control an LED.</p>
-                    <p><img src="../photo/mart-microbit1.jpg" alt="A picture of a microbit with a lit LED"/></p>
-                    <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/blob/master/examples/ledclass.py">here</a>.</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
-                    <p>
-                        <span class="name">Tom Viner</span>
-                        <span class="location">Kent, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Tuesday, 24th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p><a href="https://github.com/tomviner/micro-bit-examples/blob/master/four_buttons.py" target="_blank"><b>Four buttons</b></a> - 2 buttons + 2 more "buttons"!</p>
-                    <div class="video-container">
-                    <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6ofUJ6Mgk4k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
-                    <p>
-                        <span class="name">Tom Viner</span>
-                        <span class="location">Kent, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Tuesday, 24th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p><a href="https://github.com/tomviner/upyflashed" target="_blank"><b>upyflashed</b></a> - A script to watch for new hex files from the <a href="https://github.com/ntoll/upyed">upyed</a> in-browser editor, and flash the micro:bit immediately</p>
-                    <div class="video-container">
-                    <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6I7S2f20hso?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
-                    <p>
-                        <span class="name">Tom Viner</span>
-                        <span class="location">Kent, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Tuesday, 24th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p><a href="https://github.com/tomviner/micro-bit-examples/blob/master/digital_water.py" target="_blank"><b>Digital Water</b></a> - your micro water simulator!</p>
-                    <div class="video-container">
-                    <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/OBTUjoc46Pk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
-                    <p>
-                        <span class="name">Tom Viner</span>
-                        <span class="location">Kent, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Monday, 23rd November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Mei-Xiu on the Micro: Bit World Tour: Teaser trailer for upcoming digital water video. <a href="https://t.co/ZMC8ukVWh4">pic.twitter.com/ZMC8ukVWh4</a></p>&mdash; tomviner (@tomviner) <a href="https://twitter.com/tomviner/status/668816911988314112">November 23, 2015</a></blockquote>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <h1 class="homepage-title"><a href="/"><span>micro:bit</span><span class="microbit large-icon"></span><span>worldtour</span></a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/microbit/mary.html" id="mary" class="mary"><span>Mary</span><div class="microbit mary"></div></a></li>
+                    <li><a href="/microbit/meena.html" id="meena" class="meena"><span>Meena</span><div class="microbit meena"></div></a></li>
+                    <li><a href="/microbit/meixiu.html" id="meixiu" class="meixiu"><span>Mei Xiu</span><div class="microbit meixiu"></div></a></li>
+                    <li><a href="/microbit/mohandas.html" id="mohandas" class="mohandas"><span>Mohandas</span><div class="microbit mohandas"></div></a></li>
+                    <li><a href="/microbit/monifa.html" id="monifa" class="monifa"><span>Monifa</span><div class="microbit monifa"></div></a></li>
+                    <li> <a href="/microbit/mahiri.html" id="mahiri" class="mahari"><span>Mahari</span><div class="microbit dead"></div></a></li>
+                    <li><a href="/about.html" class="about"><span>About</span>
+                        <span class="globe">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="200px" height="200px" viewBox="0 0 439.333 439.333" enable-background="new 0 0 439.333 439.333"
+                                 xml:space="preserve">
+                                 <g class="earth">
+                                    <circle fill="#49C3CC" cx="219.667" cy="219.667" r="200"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="M67.603,219.667
+                                        c0-12.524,1.514-24.694,4.369-36.338c11.039-45.021,42.126-82.168,83.258-101.438"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="36" stroke-linecap="round" stroke-miterlimit="10" d="M130.964,319.663
+                                        C103.381,295.176,86,259.451,86,219.667C86,145.844,145.844,86,219.667,86"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M38.639,292.29c-9.013-22.445-13.972-46.955-13.972-72.623c0-62.626,29.522-118.357,75.41-154.035"/>
+                                    <path opacity="0.51" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M85.99,343.667c-30.194-32.535-48.656-76.111-48.656-124c0-38.778,12.105-74.729,32.744-104.279"/>
+                                    <path opacity="0.47" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M112.667,209.667c0-24.224,8.879-46.373,23.561-63.372"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="60" stroke-linecap="round" stroke-miterlimit="10" d="M219.667,142
+                                        c9.111,0,17.855,1.569,25.979,4.451c30.119,10.687,51.688,39.432,51.688,73.216c0,26.809-13.583,50.445-34.242,64.402"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="35" stroke-linecap="round" stroke-miterlimit="10" d="M402.049,219.667
+                                        c0,1.749-0.024,3.492-0.073,5.229c-0.433,15.352-2.763,30.228-6.763,44.404"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="33" stroke-linecap="round" stroke-miterlimit="10" d="M219.667,36.667
+                                        c17.454,0,34.337,2.443,50.326,7.007c18.544,5.293,35.886,13.438,51.52,23.93"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M364.939,89.508c16.146,18.009,29.188,39.345,37.968,63.464c21.42,58.851,12.738,121.317-18.179,170.538"/>
+                                    <path opacity="0.51" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M302.872,57.424c39.501,20.246,71.754,54.88,88.133,99.88c13.263,36.439,14.183,74.363,4.896,109.19"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="28" stroke-linecap="round" stroke-miterlimit="10" d="M361.714,338.752
+                                        c-31.898,38.807-79.065,64.587-132.316,68.154c-4.208,0.282-8.453,0.426-12.731,0.426"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="58" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M327.892,280.236c-21.229,37.852-61.739,63.431-108.226,63.431c-31.532,0-60.315-11.77-82.196-31.155"/>
+                                </g>
+                            </svg>
+                        </span>
+                    </a></li>
+              </ul>
+            </nav>
 
+            <div class="mobile-nav">
+                <h1 class="homepage-title">micro:bit worldtour<label for="mobile-menu-toggle"><span class="hidden">menu</span></label></h1>
+                <input type="checkbox" id="mobile-menu-toggle">
+                <ul class="mobile-menu">
+                    <li><a href="/microbit/mary.html" id="mary" class="mary"><div class="microbit mary"></div><span>Mary</span></a></li>
+                    <li><a href="/microbit/meena.html" id="meena" class="meena"><div class="microbit meena"></div><span>Meena</span></a></li>
+                    <li><a href="/microbit/meixiu.html" id="meixiu" class="meixiu"><div class="microbit meixiu"></div><span>Mei Xiu</span></a></li>
+                    <li><a href="/microbit/mohandas.html" id="mohandas" class="mohandas"><div class="microbit mohandas"></div><span>Mohandas</span></a></li>
+                    <li><a href="/microbit/monifa.html" id="monifa" class="monifa"><div class="microbit monifa"></div><span>Monifa</span></a></li>
+                    <li> <a href="/microbit/mahiri.html" id="mahiri" class="mahari"><div class="microbit dead"></div><span>Mahari</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="page-content">
+            <h1 class="page-title">Mei-Xiu micro:bit</h1>
+            <div id="map" class="fragment"></div>
+            <div class="content">
+                <!-- ADD NEW ENTRIES HERE -->
+                <!-- OLDER ENTRIES GO AT THE BOTTOM -->
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars3.githubusercontent.com/u/511547?v=3&u&s=140" alt="A picture of Eleni" />
+                        <p>
+                            <span class="name">Eleni Lixourioti</span>
+                            <span class="location">London, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Wednesday, 30st December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p><strong>Greek version</strong></p>
+                        <p>Καθώς δεν τα πηγαίνω γενικά πολύ καλά με την κηπουρική, πολλές φορές <b>δυσκολεύομαι
+                        να κρατήσω τα φυτά μου χαρούμενα</b>.</p>
+                        <p>Για να διευκολύνω λίγο τα πράγματα, έφτιαξα την παρακάτω λύση:</p>
+                        <p>&nbsp;</p>
+                        <p><strong>English version</strong></p>
+                        <p>I'm not much into gardening and I often struggle to <b>keep my indoor plants happy</b>.</p>
+                        <p>Here's what I came up with to make things a little easier:</p>
+                        <iframe src="//giphy.com/embed/26tPmvQGLAWMIOMr6?html5=true&playOnHover=true&hideSocial=true" width="480" height="271" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+                        <p>Διάβασε την υπόλοιπη ανάρτηση (Read the post): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/9803/">Project #3: Plants have feelings too</a></p>
+                        <p>Πλήρης σειρα (Full blog series): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/">A week with Micro:bit</a></p>
+                        <p>Κώδικας (Code on github): <a href="https://github.com/Geekfish/microbit-week/blob/master/happy_plant.py">happy_plant.py</a></p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars3.githubusercontent.com/u/511547?v=3&u&s=140" alt="A picture of Eleni" />
+                        <p>
+                            <span class="name">Eleni Lixourioti</span>
+                            <span class="location">London, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Wednesday, 30st December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p><strong>Greek version</strong></p>
+                        <p>Τα Χριστούγεννα (τουλάχιστον για όσους ζουν στο Βόρειο ημισφαίριο) συχνά συνδέονται με το χιόνι.</p>
+                        <p>Σκέφτηκα λοιπόν να δημιουργήσω μερικές <b>χιονονυφάδες</b> στο microbit.</p>
+                        <p>Αυτό κατέληξε να γίνει μια μικρή άσκηση περιστροφής γωνίας έτσι ώστε να γεμίσουμε συμμετρικά τον υπόλοιπο πίνακα με leds.</p>
+                        <p>Τα αποτελέσματα... δε μοιάζουν και πολύ με νυφάδες ;)</p>
+                        <p>&nbsp;</p>
+                        <p><strong>English version</strong></p>
+                        <p>Since Christmas often means snow (at least for us living in the northern hemisphere)
+                            I thought to try to generate some <b>snowflakes</b> on the microbit.</p>
+                        <p>This is just a small exercise of rotating a corner to symmetrically fill the rest of the leds.
+                           Results might be... not very snowflake-like ;)</p>
+                        <iframe src="//giphy.com/embed/d2ZjJTBfZ2WMQuyI?html5=true&playOnHover=true&hideSocial=true" width="480" height="351" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+                        <p>Διάβασε την υπόλοιπη ανάρτηση (Read the post): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/9803/">Project #2: Snowflakes (almost)</a></p>
+                        <p>Πλήρης σειρα (Full blog series): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/">A week with Micro:bit</a></p>
+                        <p>Κώδικας (Code on github): <a href="https://github.com/Geekfish/microbit-week/blob/master/snowflakes.py">snowflakes.py</a></p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars3.githubusercontent.com/u/511547?v=3&u&s=140" alt="A picture of Eleni" />
+                        <p>
+                            <span class="name">Eleni Lixourioti</span>
+                            <span class="location">London, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Wednesday, 30st December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p><strong>Greek version</strong></p>
+                        <p>Ταιριάζει για αρχή να ξεκινήσουμε με μια εφαρμογή που <b>ρίχνει ζάρια</b>!</p>
+                        <p>Δυνατότητες:</p>
+                        <ul>
+                            <li>Τα κουμπιά πρέπει να αλλάζουν μεταξύ των διαθέσημων ζαριών ενός στάνταρ σετ για RPG (d4, d6, d8, d10, d12, d20)</li>
+                            <li>Μόλις ο παίκτης επιλέξει το ζάρι που θέλει, πρέπει να μπορεί να το ρίξει κουνώντας το micro:bit.</li>
+                        </ul>
+                        <p>Δυσκολίες:</p>
+                        <ul>
+                            <li>Ανίχνευση της κίνησης "ριξήματος"</li>
+                            <li>Προσαρμογή ρυθμίσεων για βελτίωση της χρηστικότητας</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p><strong>English version</strong></p>
+                        <p>Obligatory <b>dice rolling</b> project to get us started!</p>
+                        <p>Features:</p>
+                        <ul>
+                            <li>The buttons should cycle through the various dice from a simple standard RPG poly set (d4, d6, d8, d10, d12, d20)</li>
+                            <li>Once a die is selected the player should be able to roll it by shaking the micro:bit.</li>
+                        </ul>
+                        <p>Challenges:</p>
+                        <ul>
+                            <li>Shake detection</li>
+                            <li>Calibration for usability</li>
+                        </ul>
+                        <iframe src="//giphy.com/embed/d2Z6C1b3VckTDHpe?html5=true&playOnHover=true&hideSocial=true" width="480" height="516" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+                        <p>Διάβασε την υπόλοιπη ανάρτηση (Read the post): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/9776/">Project #1: Dice Roller</a></p>
+                        <p>Πλήρης σειρα (Full blog series): <a href="https://thoughtstreams.io/Geekfish/a-week-with-microbit/">A week with Micro:bit</a></p>
+                        <p>Κώδικας (Code on github): <a href="https://github.com/Geekfish/microbit-week/blob/master/dicer_roller.py">dice_roller.py</a></p>
+                    </div>
+                </div>
+                <div class="entry">
+                	<div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars1.githubusercontent.com/u/5587863?v=3&s=140" alt="A picture of Stewart" />
+                        <p>
+                        <span class="name">Stewart Watkiss</span>
+                        <span class="location">Redditch, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Monday, 21st December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>The accelerometer on the micro:bit is a great way to control robots. The accelerometer is very easy to use in MicroPython, the main task is to squirt the data down the serial port (on the USB) and have it talk to the computer at the other end.</p>
+                        <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nAtEkyG7vys" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>More details: <a href="http://www.watkissonline.co.uk/wordpress/?p=7907">On controlling the Raspberry Pi robot</a> and <a href="http://www.watkissonline.co.uk/wordpress/?p=7906">how to communicate as a serial device between the micro:bit and a computer</a>.</p>
+                        <p>The code is on github: <a href="https://github.com/penguintutor/microbit-micropython"> MicroPython on the micro:bit</a></p>
+                    </div>
+                </div>
+                <div class="entry">
+                	<div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars1.githubusercontent.com/u/5587863?v=3&s=140" alt="A picture of Stewart" />
+                        <p>
+                        <span class="name">Stewart Watkiss</span>
+                        <span class="location">Redditch, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Thursday, 17th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>One of the first things that you normally do when learning electronics is to light up an LED. It gives an immediate output and adds a bit of a wow factor as the student feels they've accomplished something. All well and good, but a little red LED is not that impressive. So I thought what about a bigger LED, what above a bright LED would that be a bit more impressive? What if they were mini-theatre lights bright enough to make an impact at your school disco!</p>
+                        <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3iHy7EKj0zY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>More  details on my blog <a href="http://www.watkissonline.co.uk/wordpress/?p=7898">Disco lights controlled by a micro:bit running MicroPython</a>.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                	<div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars1.githubusercontent.com/u/5587863?v=3&s=140" alt="A picture of Stewart" />
+                        <p>
+                        <span class="name">Stewart Watkiss</span>
+                        <span class="location">Redditch, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Wednesday, 16th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I expect that some of the children that get the micro:bits will already own a Raspberry Pi. I therefore wanted to look at how easy it is to get started programming the micro:bit from a Raspberry Pi. I also wanted to use the easy to use upyed editor which runs within the Chrome browser (Chromium on the Raspberry Pi). It's not the most exciting program (Hello World), but provides a starting point for programming the micro:bit from the Raspberry Pi.</p>
+                        <p>I hope to look at interacting between the Raspberry Pi and micro:bit next.</p>
+                        <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/te2fXgHvFxM?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>More  details on my blog <a href="http://www.watkissonline.co.uk/microbit">Programming the micro:bit using a Raspberry Pi 2</a>.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
+                        <p>
+                        <span class="name">Martin O'Hanlon</span>
+                        <span class="location">Wall Heath, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Wednesday, 9th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I decided to see if I could do something fun with the Microbit and David Whale (@whaleygeek) suggested 'can we use the microbit to control something in Minecraft', that sounded like a fun idea so I came up with a program which would allow me to fly an Xwing around Minecraft using the Microbit to control whether it went left or right and using the buttons to make it start and drop bombs.</p>
+                        <p>I am quite pleased with myself!</p>
+                        <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/59KqWVwj_Cc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/tree/master/examples/mcfly">here</a>.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
+                        <p>
+                        <span class="name">Martin O'Hanlon</span>
+                        <span class="location">Birmingham, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Monday, 7th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I was demoing a super cool project using the Microbit at Picademy (more on that later) we decided to see if we could get the Microbit working via a USB on-the-go connection and an Android phone. It worked a treat! Made a program using touchdevelop, downloaded the .hex and flashed it all using an Android phone. This can open up the Microbit to many young people who dont have regular access to a computer.</p>
+                        <p><img src="../photo/microbit-android.jpg" alt="picture of a microbit being programmed via an android phone." /></p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
+                        <p>
+                        <span class="name">Martin O'Hanlon</span>
+                        <span class="location">Wall Heath, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Monday, 30th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I wanted to have a go at using the MicroBit's accelerometer so I decided to make a Magic 8 Ball.</p>
+                        <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/b-8cRJiEKbo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>A blog post about creating the Magic 8 Ball is on <a href="http://www.stuffaboutcode.com/2015/11/microbit-magic-8-ball-with-micropython.html">stuffaboutcode</a>.</p>
+                        <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/blob/master/examples/8ball.py">here</a>.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
+                        <p>
+                        <span class="name">Martin O'Hanlon</span>
+                        <span class="location">Wall Heath, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Wednesday, 25th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>Flushed with my success of turning on an LED, the equivalent of 'Hello World', I thought I would see how far I could push MicroPython and the MicroBit and see if I could port a version of 'Snake' I created a while ago.  It turns out I could!</p>
+                        <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/R1DOIxkGSwg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/blob/master/examples/snakebit.py">here</a>.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/2329501?v=3&s=460" alt="A picture of Martin" />
+                        <p>
+                        <span class="name">Martin O'Hanlon</span>
+                        <span class="location">Wall Heath, UK.</span>
+                        </p>
+                        <p>
+                        <span class="date">Wednesday, 25th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>Tom Viner gave me some great tips and got me started using ntolls <a href="https://github.com/ntoll/upyed">upyed</a> to create some code and also supplied me with his auto upload utility <a href="https://github.com/tomviner/upyflashed" target="_blank">upyflashed</a> get it onto the micropython.</p>
+                        <p>I started by making a simple class to control an LED.</p>
+                        <p><img src="../photo/mart-microbit1.jpg" alt="A picture of a microbit with a lit LED"/></p>
+                        <p>The code is <a href="https://github.com/martinohanlon/microbit-micropython/blob/master/examples/ledclass.py">here</a>.</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
+                        <p>
+                            <span class="name">Tom Viner</span>
+                            <span class="location">Kent, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Tuesday, 24th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p><a href="https://github.com/tomviner/micro-bit-examples/blob/master/four_buttons.py" target="_blank"><b>Four buttons</b></a> - 2 buttons + 2 more "buttons"!</p>
+                        <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6ofUJ6Mgk4k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
+                        <p>
+                            <span class="name">Tom Viner</span>
+                            <span class="location">Kent, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Tuesday, 24th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p><a href="https://github.com/tomviner/upyflashed" target="_blank"><b>upyflashed</b></a> - A script to watch for new hex files from the <a href="https://github.com/ntoll/upyed">upyed</a> in-browser editor, and flash the micro:bit immediately</p>
+                        <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6I7S2f20hso?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
+                        <p>
+                            <span class="name">Tom Viner</span>
+                            <span class="location">Kent, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Tuesday, 24th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p><a href="https://github.com/tomviner/micro-bit-examples/blob/master/digital_water.py" target="_blank"><b>Digital Water</b></a> - your micro water simulator!</p>
+                        <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/OBTUjoc46Pk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
+                        <p>
+                            <span class="name">Tom Viner</span>
+                            <span class="location">Kent, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Monday, 23rd November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Mei-Xiu on the Micro: Bit World Tour: Teaser trailer for upcoming digital water video. <a href="https://t.co/ZMC8ukVWh4">pic.twitter.com/ZMC8ukVWh4</a></p>&mdash; tomviner (@tomviner) <a href="https://twitter.com/tomviner/status/668816911988314112">November 23, 2015</a></blockquote>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
+                        <p>
+                            <span class="name">Tom Viner</span>
+                            <span class="location">Kent, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Thursday, 12th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I've received Mei-Xiu micro:bit at the London Python Dojo!</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
+                        <p>
+                            <span class="name">Nicholas Tollervey</span>
+                            <span class="location">Towcester, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Saturday, 7th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I've finally finished the website and I'm ready to
+                        post Mei-Xiu micro:bit to Tom Viner.</p>
+                    </div>
                 </div>
             </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/559839291983933440/BQAyw7cN_normal.jpeg" alt="A picture of Tom" />
-                    <p>
-                        <span class="name">Tom Viner</span>
-                        <span class="location">Kent, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Thursday, 12th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I've received Mei-Xiu micro:bit at the London Python Dojo!</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
-                    <p>
-                        <span class="name">Nicholas Tollervey</span>
-                        <span class="location">Towcester, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Saturday, 7th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I've finally finished the website and I'm ready to
-                    post Mei-Xiu micro:bit to Tom Viner.</p>
-                </div>
-            </div>
+        </div>
+        <div class="footer">
+            <h1>micro:bit worldtour</h1>
+            <span class="microbit"></span>
+            <p>Design by <a href="http://www.blanc.ltd.uk/">Blanc</a></p>
         </div>
         <script src="/js/microworldtour.js"></script>
         <script src="meixiu.js"></script>
