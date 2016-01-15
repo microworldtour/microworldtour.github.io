@@ -5,6 +5,7 @@
 @monifa:  #d4391b;
 @mahiri:  black;
 @marja:  #263dde;
+@macaroni:#11e3fe;
 
 @charcoal: #3f3f3f;
 @space: #1D1D37;
@@ -19,6 +20,7 @@
 @monifa-delay:      0.8s;
 @mahiri-delay:  1.5s;
 @marja-delay:  1.7s;
+@macaroni-delay:  0.6s;
 
 @dead: black;
 @em: 18em;
@@ -148,6 +150,10 @@ a { color: #2fa6c8; }
     border-color: @monifa;
     &:before, &:after { background: @monifa;}
   }
+  &.macaroni{
+    border-color: @macaroni;
+    &:before, &:after { background: @macaroni;}
+  }
   &.vintage {
     position: absolute;
     left: 1.5em;
@@ -177,6 +183,7 @@ a { color: #2fa6c8; }
       .monifa & { animation-delay: @monifa-delay; }
       .mahiri & { animation-delay: @mahiri-delay; }
       .marja & { animation-delay: @marja-delay; }
+      .macaroni & { animation-delay: @macaroni-delay; }
     }
   }
 }
@@ -311,6 +318,7 @@ header {
       .monifa:hover { color: @monifa; }
       .mahiri:hover { color: @mahiri; }
       .marja:hover { color: @marja; }
+      .macaroni:hover { color: @macaroni; }
     }
   }
 }
