@@ -16,4 +16,3 @@ based on the order of this list):
 * Chris Foresman - Chicago, IL USA. foresmac@gmail.com. Senior Systems Engineer, Vokal; Python Programming Instructor, Northwestern University Center for Talent Development
 * Angus Thomas - Horsham, UK. angus.thomas@gmail.com Code Club leader
 * Joshua Jay herman - Chicago, IL zitterbewegung@gmail.com Member of chipy and CEO of A Cons Apart developing software for 3d printing and search by shape.
-* Päivi Suomela - Sheffield, UK. paivi.e.suomela@gmail.com. Newbie developer and a django girls enthusiast who loves learning python.
