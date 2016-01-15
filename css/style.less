@@ -1,9 +1,10 @@
 @mary:    #5db24a;
 @meena:   #2fa6c8;
-@meixiu:  #a83fd8;
+@meixiu:  black;
 @mohandas:#d4b81b;
 @monifa:  #d4391b;
 @mahiri:  black;
+@marja:  #263dde;
 
 @charcoal: #3f3f3f;
 @space: #1D1D37;
@@ -17,6 +18,7 @@
 @mohandas-delay:  0.3s;
 @monifa-delay:      0.8s;
 @mahiri-delay:  1.5s;
+@marja-delay:  1.7s;
 
 @dead: black;
 @em: 18em;
@@ -134,6 +136,10 @@ a { color: #2fa6c8; }
     border-color: @meixiu;
     &:before, &:after { background: @meixiu;}
   }
+  &.marja {
+    border-color: @marja;
+    &:before, &:after { background: @marja;}
+  }
   &.mohandas {
     border-color: @mohandas;
     &:before, &:after { background: @mohandas;}
@@ -170,6 +176,7 @@ a { color: #2fa6c8; }
       .mohandas & { animation-delay: @mohandas-delay; }
       .monifa & { animation-delay: @monifa-delay; }
       .mahiri & { animation-delay: @mahiri-delay; }
+      .marja & { animation-delay: @marja-delay; }
     }
   }
 }
@@ -303,6 +310,7 @@ header {
       .mohandas:hover { color: @mohandas; }
       .monifa:hover { color: @monifa; }
       .mahiri:hover { color: @mahiri; }
+      .marja:hover { color: @marja; }
     }
   }
 }
@@ -500,3 +508,4 @@ body.meixiu .entry .name { border: 0.5em solid @meixiu; color: @meixiu}
 body.mohandas .entry .name { border: 0.5em solid @mohandas; color: @mohandas}
 body.monifa .entry .name { border: 0.5em solid @monifa; color: @monifa}
 body.mahiri .entry .name { border: 0.5em solid @mahiri; color: @mahiri}
+body.marja .entry .name { border: 0.5em solid @marja; color: @marja}
