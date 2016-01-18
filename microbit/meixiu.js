@@ -20,20 +20,26 @@ var meixiuMicrobit = [{
         icon: meixiu_icon
     }
 }, {
-    popup: "Mart took Mei-Xui to Picademy.",
+    popup: "Mart took Mei-Xiu to Picademy.",
     lonLat: [52.479439, -1.908457],
     options: {
         icon: meixiu_icon
     }
 }, {
-    popup: "Mei-Xui visited Stewart and a robot, where it had a disco party.",
+    popup: "Mei-Xiu visited Stewart and a robot, where it had a disco party.",
     lonLat: [52.305081, -1.958886],
     options: {
         icon: meixiu_icon
     }
 }, {
-    popup: "Mei-Xui and Eleni explored the emotions of plant life.",
+    popup: "Mei-Xiu and Eleni explored the emotions of plant life.",
     lonLat: [51.535540, -0.003631],
+    options: {
+        icon: meixiu_icon
+    }
+}, {
+    popup: "Mei-Xiu had some good times with Päivi before breaking down.",
+    lonLat: [53.381129, -1.470085],
     options: {
         icon: meixiu_icon
     }

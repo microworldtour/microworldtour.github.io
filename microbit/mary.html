@@ -7,161 +7,220 @@
         <link rel="shortcut icon" href="/img/microicon.png" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/leaflet.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500italic' rel='stylesheet' type='text/css'>
         <script src="/js/leaflet.js"></script>
         <script src="/js/leaflet.polylineDecorator.min.js"></script>
     </head>
-    <body>
+    <body class="mary">
         <header>
-            <a href="/">Home</a> |
-            <a href="/about.html">About</a> |
-            <a href="/microbit/mary.html" id="mary">Mary</a> |
-            <a href="/microbit/meena.html" id="meena">Meena</a> |
-            <a href="/microbit/mahiri.html" id="mahiri">Mahiri</a> |
-            <a href="/microbit/meixiu.html" id="meixiu">Mei-Xiu</a> |
-            <a href="/microbit/mohandas.html" id="mohandas">Mohandas</a> |
-            <a href="/microbit/monifa.html" id="monifa">Monifa</a>
+            <h1 class="homepage-title"><a href="/"><span>micro:bit</span><span class="microbit large-icon"></span><span>worldtour</span></a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/microbit/mary.html" id="mary" class="mary"><span>Mary</span><div class="microbit mary"></div></a></li>
+                    <li><a href="/microbit/meena.html" id="meena" class="meena"><span>Meena</span><div class="microbit meena"></div></a></li>
+                    <li><a href="/microbit/meixiu.html" id="meixiu" class="meixiu"><span>Mei Xiu</span><div class="microbit dead"></div></a></li>
+                    <li><a href="/microbit/mohandas.html" id="mohandas" class="mohandas"><span>Mohandas</span><div class="microbit mohandas"></div></a></li>
+                    <li><a href="/microbit/monifa.html" id="monifa" class="monifa"><span>Monifa</span><div class="microbit monifa"></div></a></li>
+                    <li> <a href="/microbit/mahiri.html" id="mahiri" class="mahari"><span>Mahari</span><div class="microbit dead"></div></a></li>
+                    <li><a href="/microbit/marja.html" id="marja" class="marja"><span>Marja</span><div class="microbit marja"></div></a></li>
+                    <li><a href="/about.html" class="about"><span>About</span>
+                        <span class="globe">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="200px" height="200px" viewBox="0 0 439.333 439.333" enable-background="new 0 0 439.333 439.333"
+                                 xml:space="preserve">
+                                 <g class="earth">
+                                    <circle fill="#49C3CC" cx="219.667" cy="219.667" r="200"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="M67.603,219.667
+                                        c0-12.524,1.514-24.694,4.369-36.338c11.039-45.021,42.126-82.168,83.258-101.438"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="36" stroke-linecap="round" stroke-miterlimit="10" d="M130.964,319.663
+                                        C103.381,295.176,86,259.451,86,219.667C86,145.844,145.844,86,219.667,86"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M38.639,292.29c-9.013-22.445-13.972-46.955-13.972-72.623c0-62.626,29.522-118.357,75.41-154.035"/>
+                                    <path opacity="0.51" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M85.99,343.667c-30.194-32.535-48.656-76.111-48.656-124c0-38.778,12.105-74.729,32.744-104.279"/>
+                                    <path opacity="0.47" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M112.667,209.667c0-24.224,8.879-46.373,23.561-63.372"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="60" stroke-linecap="round" stroke-miterlimit="10" d="M219.667,142
+                                        c9.111,0,17.855,1.569,25.979,4.451c30.119,10.687,51.688,39.432,51.688,73.216c0,26.809-13.583,50.445-34.242,64.402"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="35" stroke-linecap="round" stroke-miterlimit="10" d="M402.049,219.667
+                                        c0,1.749-0.024,3.492-0.073,5.229c-0.433,15.352-2.763,30.228-6.763,44.404"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="33" stroke-linecap="round" stroke-miterlimit="10" d="M219.667,36.667
+                                        c17.454,0,34.337,2.443,50.326,7.007c18.544,5.293,35.886,13.438,51.52,23.93"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M364.939,89.508c16.146,18.009,29.188,39.345,37.968,63.464c21.42,58.851,12.738,121.317-18.179,170.538"/>
+                                    <path opacity="0.51" fill="none" stroke="#BED1D4" stroke-width="42" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M302.872,57.424c39.501,20.246,71.754,54.88,88.133,99.88c13.263,36.439,14.183,74.363,4.896,109.19"/>
+                                    <path fill="none" stroke="#53B848" stroke-width="28" stroke-linecap="round" stroke-miterlimit="10" d="M361.714,338.752
+                                        c-31.898,38.807-79.065,64.587-132.316,68.154c-4.208,0.282-8.453,0.426-12.731,0.426"/>
+                                    <path opacity="0.57" fill="none" stroke="#BED1D4" stroke-width="58" stroke-linecap="round" stroke-miterlimit="10" d="
+                                        M327.892,280.236c-21.229,37.852-61.739,63.431-108.226,63.431c-31.532,0-60.315-11.77-82.196-31.155"/>
+                                </g>
+                            </svg>
+                        </span>
+                    </a></li>
+              </ul>
+            </nav>
+
+            <div class="mobile-nav">
+                <h1 class="homepage-title">micro:bit worldtour<label for="mobile-menu-toggle"><span class="hidden">menu</span></label></h1>
+                <input type="checkbox" id="mobile-menu-toggle">
+                <ul class="mobile-menu">
+                    <li><a href="/microbit/mary.html" id="mary" class="mary"><div class="microbit mary"></div><span>Mary</span></a></li>
+                    <li><a href="/microbit/meena.html" id="meena" class="meena"><div class="microbit meena"></div><span>Meena</span></a></li>
+                    <li><a href="/microbit/meixiu.html" id="meixiu" class="meixiu"><div class="microbit dead"></div><span>Mei Xiu</span></a></li>
+                    <li><a href="/microbit/mohandas.html" id="mohandas" class="mohandas"><div class="microbit mohandas"></div><span>Mohandas</span></a></li>
+                    <li><a href="/microbit/monifa.html" id="monifa" class="monifa"><div class="microbit monifa"></div><span>Monifa</span></a></li>
+                    <li> <a href="/microbit/mahiri.html" id="mahiri" class="mahari"><div class="microbit dead"></div><span>Mahari</span></a></li>
+                    <li><a href="/microbit/marja.html" id="marja" class="marja"><div class="microbit marja"></div><span>Marja</span></a></li>
+                </ul>
+            </div>
         </header>
-        <div class="content">
-        <h1>Mary micro:bit</h1>
+        <div class="page-content">
+            <div class="content"><h1 class="page-title">Mary micro:bit</h1></div>
+            <div id="map" class="fragment"></div>
+            <div class="content">
+                <!-- ADD NEW ENTRIES HERE -->
+                <!-- OLDER ENTRIES GO AT THE BOTTOM -->
+                <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
+                        <p>
+                            <span class="name">Naomi Ceder</span>
+                            <span class="location">Chicago, USA.</span>
+                        </p>
+                        <p>
+                            <span class="date">Monday, 14th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                      <p>One thing that the folks in Chicago noticed was
+    		  that while Mary could play music, the software as it
+    		  was didn't allow tunes to be played at different
+    		  tempos. Naomi had a look at
+    		  <a
+    		  href="https://github.com/bbcmicrobit/micropython">
+    		  the source code</a> and saw
+    		  a possible fix. After some discussion of
+    		  various strategies with the core developers, Naomi
+    		  submitted a patch that should be appearing soon!
+    		  </p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
+                        <p>
+                            <span class="name">Naomi Ceder</span>
+                            <span class="location">Chicago, USA.</span>
+                        </p>
+                        <p>
+                            <span class="date">Thursday, 10th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                      <p>Mary was out for another social evening 10th
+    		  December as she made an appearance at the regular <a
+    		  href="http://www.chipy.org/" >ChiPy
+    		  meeting</a>. With over 60 people in attendance Mary
+    		  apparently got a bit of stage fright and lost her
+    		  interactive REPL voice. While this problem
+    		  made the presentation a bit more challenging, she
+    		  was still happy to run flashed scripts, and
+    		  as they say, "the show must go on!"</p>
+    		  <p>Naomi gave a talk about the background leading up
+    		  to the micro:bit, including the BBC Micro, and
+    		  explained some of the goals of the project and how
+    		  Python made it onto the micro:bit.</p>
+    		  <p>In spite of losing her voice, Mary did manage to
+    		   <a href="https://t.co/Te7x1U9WtT"> say hello to the
+    		  ChiPy members</a>.
+    <blockquote class="twitter-video" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/NaomiCeder">@NaomiCeder</a> at <a href="https://twitter.com/ChicagoPython">@ChicagoPython</a> with <a href="https://twitter.com/hashtag/microbit?src=hash">#microbit</a> <a href="https://t.co/Te7x1U9WtT">pic.twitter.com/Te7x1U9WtT</a></p>&mdash; Tathagata (@Tathagata) <a href="https://twitter.com/Tathagata/status/675147554930237444">December 11, 2015</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    		  <p><b>Retirement:</b> Since Mary sees to have lost
+    		  her voice, Mary will soon be retiring to do research
+    		  work. Stay tuned for news about her replacement.</p>
+
+                    </div>
+                </div>
+                <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
+                        <p>
+                            <span class="name">Naomi Ceder</span>
+                            <span class="location">Chicago, USA.</span>
+                        </p>
+                        <p>
+                            <span class="date">Saturday, 5th December 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>It might have taken Mary a while to make it to
+    		  Chicago, but she's quickly making friends!</p>
+    		  <p>Our first stop was a "sneak preview" evening with
+    		  several interested local Pythonistas. Naomi walked
+    		  through some of the background leading to the
+    		  micro:bit and having Python on it.</p>
+    		  <img src="/photo/Mary_with_hand.JPG" alt="Mary">
+    		  <p>Then, we ended with some demos and
+    		  experimentation. Chicago ChiPy member Tanya
+    		  Schlusser had brought a toy truck (a "Monster Road
+    		  Ripper"!) which Tanya had modified to allow control
+    		  from a micro:bit.</p>
+                      <img src="/photo/attendees1.JPG"  alt="Chicago sneak
+    		  preview">
+    		  <p>Tanya's notes on how she took a $6.99 toy
+    		  and made it micro:bit-able <a href="/photo/wiring_the_road_ripper.pdf" >are here</a>. In the end it
+    		  was a success, since Mary managed to drive the truck
+    		  and even stop short of crashing!
+    		  </p>
+    		  <p>Finally we played around quite a bit with the
+    		  music library, even finding something that we all thought
+    		  needed to be "fixed". Stay tuned for a later post on
+    		  that.</p>
+    		  <p>Mary will be out for another social evening 10th
+    		  December as she presents at the regular <a
+    		  href="http://www.chipy.org/" >ChiPy
+    		  meeting</a>. We'll report on this in a later post.</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
+                        <p>
+                            <span class="name">Naomi Ceder</span>
+                            <span class="location">Chicago, USA.</span>
+                        </p>
+                        <p>
+                            <span class="date">Saturday, 28th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>After a tortuous journey across the Atlantic and through the US postal system, Mary arrived in Chicago</p>
+                    </div>
+                </div>
+                <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
+                        <p>
+                            <span class="name">Nicholas Tollervey</span>
+                            <span class="location">Towcester, UK.</span>
+                        </p>
+                        <p>
+                            <span class="date">Saturday, 7th November 2015</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>I've finally finished the website and I'm ready to
+                        post Mary micro:bit to Naomi Ceder.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="map" class="fragment"></div>
-        <div class="content">
-            <!-- ADD NEW ENTRIES HERE -->
-            <!-- OLDER ENTRIES GO AT THE BOTTOM -->
-            <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
-                    <p>
-                        <span class="name">Naomi Ceder</span>
-                        <span class="location">Chicago, USA.</span>
-                    </p>
-                    <p>
-                        <span class="date">Monday, 14th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                  <p>One thing that the folks in Chicago noticed was
-		  that while Mary could play music, the software as it
-		  was didn't allow tunes to be played at different
-		  tempos. Naomi had a look at
-		  <a
-		  href="https://github.com/bbcmicrobit/micropython">
-		  the source code</a> and saw
-		  a possible fix. After some discussion of
-		  various strategies with the core developers, Naomi
-		  submitted a patch that should be appearing soon!
-		  </p>
-                </div>
-            </div>
-            <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
-                    <p>
-                        <span class="name">Naomi Ceder</span>
-                        <span class="location">Chicago, USA.</span>
-                    </p>
-                    <p>
-                        <span class="date">Thursday, 10th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                  <p>Mary was out for another social evening 10th
-		  December as she made an appearance at the regular <a
-		  href="http://www.chipy.org/" >ChiPy
-		  meeting</a>. With over 60 people in attendance Mary
-		  apparently got a bit of stage fright and lost her
-		  interactive REPL voice. While this problem
-		  made the presentation a bit more challenging, she
-		  was still happy to run flashed scripts, and
-		  as they say, "the show must go on!"</p>
-		  <p>Naomi gave a talk about the background leading up
-		  to the micro:bit, including the BBC Micro, and
-		  explained some of the goals of the project and how
-		  Python made it onto the micro:bit.</p>
-		  <p>In spite of losing her voice, Mary did manage to
-		   <a href="https://t.co/Te7x1U9WtT"> say hello to the
-		  ChiPy members</a>.
-<blockquote class="twitter-video" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/NaomiCeder">@NaomiCeder</a> at <a href="https://twitter.com/ChicagoPython">@ChicagoPython</a> with <a href="https://twitter.com/hashtag/microbit?src=hash">#microbit</a> <a href="https://t.co/Te7x1U9WtT">pic.twitter.com/Te7x1U9WtT</a></p>&mdash; Tathagata (@Tathagata) <a href="https://twitter.com/Tathagata/status/675147554930237444">December 11, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		 
-		  <p><b>Retirement:</b> Since Mary sees to have lost
-		  her voice, Mary will soon be retiring to do research
-		  work. Stay tuned for news about her replacement.</p>
-	
-                </div>
-            </div>
-            <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
-                    <p>
-                        <span class="name">Naomi Ceder</span>
-                        <span class="location">Chicago, USA.</span>
-                    </p>
-                    <p>
-                        <span class="date">Saturday, 5th December 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>It might have taken Mary a while to make it to
-		  Chicago, but she's quickly making friends!</p>
-		  <p>Our first stop was a "sneak preview" evening with
-		  several interested local Pythonistas. Naomi walked
-		  through some of the background leading to the
-		  micro:bit and having Python on it.</p>
-		  <img src="/photo/Mary_with_hand.JPG" alt="Mary">
-		  <p>Then, we ended with some demos and
-		  experimentation. Chicago ChiPy member Tanya
-		  Schlusser had brought a toy truck (a "Monster Road
-		  Ripper"!) which Tanya had modified to allow control
-		  from a micro:bit.</p>
-                  <img src="/photo/attendees1.JPG"  alt="Chicago sneak
-		  preview">
-		  <p>Tanya's notes on how she took a $6.99 toy
-		  and made it micro:bit-able <a href="/photo/wiring_the_road_ripper.pdf" >are here</a>. In the end it
-		  was a success, since Mary managed to drive the truck
-		  and even stop short of crashing!
-		  </p>
-		  <p>Finally we played around quite a bit with the
-		  music library, even finding something that we all thought
-		  needed to be "fixed". Stay tuned for a later post on
-		  that.</p>
-		  <p>Mary will be out for another social evening 10th
-		  December as she presents at the regular <a
-		  href="http://www.chipy.org/" >ChiPy
-		  meeting</a>. We'll report on this in a later post.</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/556072622752931842/GEtJXmV3_400x400.jpeg" alt="A picture of Naomi" />
-                    <p>
-                        <span class="name">Naomi Ceder</span>
-                        <span class="location">Chicago, USA.</span>
-                    </p>
-                    <p>
-                        <span class="date">Saturday, 28th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>After a tortuous journey across the Atlantic and through the US postal system, Mary arrived in Chicago</p>
-                </div>
-            </div>
-            <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
-                <div class="headline"> <!-- Contains details of recipient -->
-                    <img src="https://pbs.twimg.com/profile_images/283774940/100_5406_2_bigger.JPG" alt="A picture of Nicholas" />
-                    <p>
-                        <span class="name">Nicholas Tollervey</span>
-                        <span class="location">Towcester, UK.</span>
-                    </p>
-                    <p>
-                        <span class="date">Saturday, 7th November 2015</span>
-                    </p>
-                </div>
-                <div class="log"> <!-- Contains a log of the results -->
-                    <p>I've finally finished the website and I'm ready to
-                    post Mary micro:bit to Naomi Ceder.</p>
-                </div>
-            </div>
+        <div class="footer">
+            <h1>micro:bit worldtour</h1>
+            <span class="microbit"></span>
+            <p>Design by <a href="http://www.blanc.ltd.uk/">Blanc</a></p>
         </div>
         <script src="/js/microworldtour.js"></script>
         <script src="/microbit/mary.js"></script>

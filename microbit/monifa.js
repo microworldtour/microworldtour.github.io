@@ -19,6 +19,12 @@ var monifaMicrobit = [{
     options: {
         icon: monifa_icon
     }
+}, {
+    popup: "Marc-Andre gave Monifa a heartbeat.",
+    lonLat: [51.2115006, 6.7656146],
+    options: {
+        icon: monifa_icon
+    }
 }];
 
 monifaMicrobit.forEach(addMarker);
