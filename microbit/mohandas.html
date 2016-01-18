@@ -84,6 +84,45 @@
                 <div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
     			<div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
                     <div class="headline"> <!-- Contains details of recipient -->
+                        <img src="https://avatars2.githubusercontent.com/u/1026649?v=3&s=460" alt="Nick's GitHub avatar" />
+                        <p>
+                            <span class="name">Nick Coghlan</span>
+                            <span class="location">Brisbane, AUS.</span>
+                        </p>
+                        <p>
+                            <span class="date">Monday, 18th January 2016</span>
+                        </p>
+                    </div>
+                    <div class="log"> <!-- Contains a log of the results -->
+                        <p>When I received the Mohandas micro:bit, I had two goals:</p>
+                        <ul>
+                            <li>Setting up a Docker image to make it easier to get started hacking on the micro:bit</li>
+                            <li>
+                                Creating my own micro:bit experiment doing zero-cross detection on the signal from a small
+                                <a href="http://littlebirdelectronics.com.au/products/breakout-board-for-electret-microphone">
+                                electret microphone</a>
+                            </li>
+                        </ul>
+                        <p>After some interesting <a href="https://github.com/lancaster-university/microbit-targets/issues/1">
+                        detours</a>, and the introduction of dependency version constraints for both
+                        <a href="https://github.com/bbcmicrobit/micropython/pull/146">micropython</a> and
+                        <a href="https://github.com/ntoll/microrepl/pull/6">microrepl</a></p>, I was able to publish
+                        a micro:bit MicroPython build environment to DockerHub as
+                        <a href="https://hub.docker.com/r/ncoghlan/microbit-dev/">ncoghlan/microbit-dev</a>.</p>
+                        <p>That image includes a full yotta build environment together with Nicholas Tollervey's
+                        <a href="https://github.com/ntoll/microrepl/">microrepl</a> project, making it straightforward both to
+                        use the micro:bit interactively, and to build new custom firmware images. There unfortunately appears to
+                        be a <a href="https://github.com/bbcmicrobit/micropython/issues/156">bug</a> with using the pyboard utility
+                        from within a Docker container, so it currently isn't possible to use that to upload and run scripts on
+                        the device directly from within the container.</p>
+                        <p>Together with other interruptions, getting a reliable build container together took longer than
+                        I anticipated though, so I never got to starting on the second goal - instead, I'll include the
+                        microphone along with Mark Schafer's 3D printed micro:bit diffuser in the package I pass along to
+                        the next Mohandas recipient, Clinton Roy</p>
+                    </div>
+                </div>
+    			<div class="entry"> <!-- ALL ENTRIES SHOULD LOOK LIKE THIS -->
+                    <div class="headline"> <!-- Contains details of recipient -->
                         <img src="http://i67.tinypic.com/2rmxzf4.jpg" alt="One of Mark's Neon Artworks" />
                         <p>
                             <span class="name">Mark Schafer</span>
