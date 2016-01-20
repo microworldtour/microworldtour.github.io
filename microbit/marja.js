@@ -13,7 +13,14 @@ var marjaMicrobit = [{
     options: {
         icon: marja_icon
     }
-}];
+}, {
+    popup: "Marja arrived safely to Cambridge.",
+    lonLat: [52.205, 0.119],
+    options: {
+		icon: marja_icon
+    }
+}
+];
 
 marjaMicrobit.forEach(addMarker);
 addRoute(marjaMicrobit, marja_colour);
