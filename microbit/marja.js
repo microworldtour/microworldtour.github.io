@@ -14,7 +14,7 @@ var marjaMicrobit = [{
         icon: marja_icon
     }
 }, {
-    popup: "Marja arrived safely to Cambridge.",
+    popup: "Marja did some painting, gaming and drumming.",
     lonLat: [52.205, 0.119],
     options: {
 		icon: marja_icon
