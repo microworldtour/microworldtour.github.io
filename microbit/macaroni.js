@@ -43,6 +43,13 @@ var macaroniMicrobit = [
 	options: {
 	    icon: macaroni_icon
 	}
+    },
+    {
+        popup: "Exploring Falkand Islands",
+	lonLat: [-51.7, -57.85],
+	options: {
+	    icon: macaroni_icon
+	}
     }
 ];
 
