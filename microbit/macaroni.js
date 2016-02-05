@@ -22,6 +22,27 @@ var macaroniMicrobit = [
         options: {
             icon: macaroni_icon
         }
+    },
+    {
+    	popup: "Learning in The Chilterns",
+	lonLat: [51.6314535,-0.8804179],
+	options: {
+	    icon: macaroni_icon
+	}
+    },
+    {
+    	popup: "Verifying the thermometer in the Mendeley Office",
+	lonLat: [51.5204148,-0.0886475],
+	options: {
+	    icon: macaroni_icon
+	}
+    },
+    {
+    	popup: "Showing two numbers at a time in Cambridge before the flight!",
+	lonLat: [52.1989266,0.0499473],
+	options: {
+	    icon: macaroni_icon
+	}
     }
 ];
 
