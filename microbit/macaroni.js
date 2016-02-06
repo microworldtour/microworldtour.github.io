@@ -43,6 +43,20 @@ var macaroniMicrobit = [
 	options: {
 	    icon: macaroni_icon
 	}
+    },
+    {
+        popup: "Exploring Falkand Islands",
+	lonLat: [-51.7, -57.85],
+	options: {
+	    icon: macaroni_icon
+	}
+    },
+    {
+	popup: "The most southerly point of the cruise measuring the temperature",
+	lonLat: [-62, -47.40],
+	options: {
+	    icon: macaroni_icon
+	}
     }
 ];
 
