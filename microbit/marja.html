@@ -84,6 +84,75 @@
                 <!-- ADD NEW ENTRIES HERE -->
                 <!-- OLDER ENTRIES GO AT THE BOTTOM -->
 
+                <div class="entry">
+                  <div class="headline">
+                    <img src="https://www.gravatar.com/avatar/432d62b47b2d496f8b5f3b5678f2cfb3.png" alt="Avatar for Paul Egan" />
+                    <p>
+                    <span class="name">Paul Egan</span>
+                    <span class="location">London, UK</span>
+                    </p>
+                    <p>
+                    <span class="date">Sunday, 7th February 2015</span>
+                    </p>
+                  </div>
+                  <div class="log">
+                    <p>
+                      We spent a few hours working on a game I started on at the London Python Dojo last year.
+                      It's a simple 2-player pong-like game that's surprisingly fun to play.
+                    </p>
+                    <p class="link">
+                      <a href="https://github.com/paulegan/microbit/blob/master/pong.py">github.com/paulegan/microbit/blob/master/pong.py</a>
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/17DUf83dUWg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p>
+                      Besides playing around for our own entertainment, we did manage to make one tiny contribution
+                      to micropython that I hope is useful to others:
+                      <pre class="prettyprint">CTRL-E        -- enter paste mode, turning off auto-indent</pre>
+                    </p>
+                    <p class="link">
+                      <a href="https://github.com/bbcmicrobit/micropython/pull/195">github.com/bbcmicrobit/micropython/pull/195</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="entry">
+                  <div class="headline">
+                    <img src="https://www.gravatar.com/avatar/432d62b47b2d496f8b5f3b5678f2cfb3.png" alt="Avatar for Paul Egan" />
+                    <p>
+                    <span class="name">Paul Egan</span>
+                    <span class="location">London, UK</span>
+                    </p>
+                    <p>
+                    <span class="date">Saturday, 6th February 2015</span>
+                    </p>
+                  </div>
+                  <div class="log">
+                    <p>
+                      The plan was to spend the week playing with the microbit and see how my 8-year old son got on
+                      with the it and micropython. Unfortunately we didn't manage to get as much time as we
+                      had hoped and in the end only spent a few hours on the weekend working on it.
+                      Despite the lack of time we did get a few positive results and it was good fun for both of us.
+                    </p>
+                    <p>
+                      The first project we attempted was to see if we could combine the accelerometer with the
+                      sound output to get a lightsaber effect. With the limitation of the square wave sounds we
+                      can make, we didn't get much further than adjusting the pitch based on accelerometer value.
+                      <pre class="prettyprint">
+                      p = abs(accelerometer.get_z())
+                      pitch(p, wait=False)
+                      </pre>
+                    </p>
+                    <p class="link">
+                      <a href="https://github.com/paulegan/microbit/blob/master/pitch.py">github.com/paulegan/microbit/blob/master/pitch.py</a>
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u3SpCDpNFQ8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p>
+                      <em>TODO:</em> Investigate the music module in more depth and see if sound files from the web can
+                      be adapted.
+                    </p>
+                  </div>
+                </div>
+
 				<div class="entry">
 					<div class="headline"> <!-- Contains details of recipient -->
 						<img src="https://avatars1.githubusercontent.com/u/6553497?v=3&s=140" alt="A picture of Peter" />
