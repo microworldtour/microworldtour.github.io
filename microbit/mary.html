@@ -96,8 +96,44 @@
                     </div>
                     <div class="log"> <!-- Contains a log of the results -->
                       <p>I have had the microbit for a few weeks and it has been a great experience. When I first was trying out the microbit
-                      I got stuck trying to connect to it. After awhile I finally figured out to set the baud rate for the microbit. After that I decided I would write a simple program to understand how to program the microbit.
-    		  </p>
+                      I got stuck trying to connect to it. After awhile I finally figured out to set the baud rate for the microbit. 
+                      After that I decided I would write a simple program to understand how to program the microbit. 
+                      The way I figured out how to use the microbit was looking at other examples and I assume others would do something similar.
+                      Below is the first attempt at a simple counter.
+                       <pre class="prettyprint">
+                       #A counter for the microbit using the a button.
+                    
+                       import microbit
+                       ctr = 0  # Initialize counter
+                       while True: # Loop forever
+                         if microbit.button_a.is_pressed():   
+                            microbit.display.scroll(str(ctr)) #Display counter
+                            ctr = ctr + 1  #Increment counter by 
+                         microbit.sleep(100)
+                         </pre>
+                         I created a pull request with the counter.py and then @dpgeorge reviewed it and noted some bugs I revised it to the following.
+                        <pre class="prettyprint">
+                            """
+                                counter.py
+                                ~~~~~~~~~~
+                                Creates a counter that increments on pressing button a.
+                                Scrolls the current count on the led display.
+                            """
+                            
+                            import microbit
+                            ctr = 1                               # Initialize counter
+                            while True:                           # Loop forever
+                              ctr = ctr + microbit.button_a.get_presses()   
+                              microbit.button_a.reset_presses()   #Get the amount of presses and add it to ctr
+                              microbit.display.scroll(str(ctr))   #Display the counter
+                              microbit.sleep(100)                 #Sleep for 100ms  
+                        </pre>
+                        This version would keep track of all button presses even while the counter is scrolling and it has better comments.
+                        I also looked into two other things. One was the availability of 3d printed cases. They are available at https://www.myminifactory.com/object/microbit-open-case-10730  
+                        I printed out half of one because I accidentally ordered two left pieces and I plan on ordering the right one to be printed at my library. 
+                        These cases are very inexpensive ($1 per piece) if you have a local 3d printing service.
+                        I also investigated how to make a frizing diagram. I haven't finished this because this appears to be something that will consume a considerable amount of time. 
+                         </p>
                     </div>
                 </div>
                 <div class="entry"> <!-- Mary, stop #1, Naomi Ceder -->
