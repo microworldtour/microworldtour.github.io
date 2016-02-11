@@ -18,8 +18,15 @@ var marjaMicrobit = [{
     lonLat: [52.205, 0.119],
     options: {
 		icon: marja_icon
-    }
-}
+    },
+},
+	{
+		popup: "London, Ealing: Working on some games to interest an 8-year old.",
+		lonLat: [51.5152,-0.3039],
+		options: {
+			icon: marja_icon
+		}
+	}
 ];
 
 marjaMicrobit.forEach(addMarker);

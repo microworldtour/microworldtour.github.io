@@ -37,7 +37,7 @@ recipient and ask for two things:
 Before you post the device you should create a pull request that changes two
 files: ``the_name_of_your_microbit.js`` and ``the_name_of_your_microbit.html``.
 
-In the JavaScript file you need to add a new object to the start of the array
+In the JavaScript file you need to add a new object to the end of the array
 found within the file. The object *must* be of the following form::
 
     {
