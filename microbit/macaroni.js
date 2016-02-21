@@ -57,6 +57,13 @@ var macaroniMicrobit = [
 	options: {
 	    icon: macaroni_icon
 	}
+    },
+    {
+	popup: "Counting krill",
+	lonLat: [-60.29245, -46.45213],
+	options: {
+	    icon: macaroni_icon
+	}
     }
 ];
 
